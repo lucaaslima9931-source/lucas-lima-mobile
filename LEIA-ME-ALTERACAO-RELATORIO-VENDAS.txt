@@ -1,0 +1,1 @@
+Removido acesso separado RELATÓRIO DE VENDAS. As listagens de vendas permanecem na Central de LISTAGENS. O módulo operacional VENDAS permanece inalterado.

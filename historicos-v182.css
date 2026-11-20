@@ -1,0 +1,7 @@
+/* V183 — dimensões e organização visual do histórico de Funcionários. */
+.ll-history-v182{box-sizing:border-box!important;width:min(440px,calc(100vw - 32px))!important;max-width:calc(100vw - 32px)!important;max-height:min(85vh,650px)!important;height:auto!important;min-height:0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;background:#fff!important;border-radius:12px!important;color:#173e77!important}
+.ll-history-v182-header{flex:0 0 auto!important;background:#173e77!important;color:#fff!important;padding:16px 20px!important;font-weight:800!important;font-size:15px!important;line-height:20px!important}
+.ll-history-v182-footer{flex:0 0 auto!important;display:flex!important;justify-content:flex-end!important;align-items:center!important;padding:14px 20px 18px!important;margin-top:0!important;background:#fff!important;border:0!important}
+.ll-history-v182-close{background:#1859a7!important;color:white!important;border:0!important;border-radius:5px!important;padding:10px 19px!important;font:700 14px Arial,sans-serif!important;cursor:pointer!important;min-width:90px!important}
+.ll-history-v182 > :not(header):not(footer):not(.modal-header):not(.modal-footer){min-height:0;overflow-y:auto;overflow-x:hidden}
+.ll-history-v183-product{margin:0 0 12px!important}

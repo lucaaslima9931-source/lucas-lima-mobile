@@ -1,0 +1,22 @@
+/* Busca dentro da seleção de marcas e categorias */
+.em-choice-search-wrap{padding:12px 18px 4px;background:#fff}.em-choice-search{width:100%;box-sizing:border-box;border:1px solid #b9cee9;border-radius:5px;padding:12px 14px;font:inherit;color:#0b356d;outline:none}.em-choice-search:focus{border-color:#2374d5;box-shadow:0 0 0 2px #dceaff}.em-choice-list [hidden],.em-choice-empty[hidden]{display:none!important}.em-choice-empty{text-align:center;padding:18px;color:#60738b}
+
+/* Modal de pesquisa no padrão dos cadastros, isolado do restante do ERP */
+.em-choice-overlay .em-choice-dialog{width:min(960px,calc(100vw - 32px));max-height:85vh;border-radius:8px;overflow:hidden;background:white;display:flex;flex-direction:column;font-family:Arial,sans-serif;color:#103b73}
+.em-choice-overlay .em-choice-head{background:#19559a;color:white;padding:20px;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:space-between}
+.em-choice-overlay .em-choice-content{padding:22px 20px 8px;overflow:auto}
+.em-choice-overlay .em-choice-controls{display:grid;grid-template-columns:110px minmax(180px,1fr) 95px 78px;gap:8px;align-items:end;margin-bottom:14px}
+.em-choice-overlay .em-choice-controls label{font-size:12px;font-weight:700;display:flex;flex-direction:column;gap:5px}
+.em-choice-overlay .em-choice-controls input,.em-choice-overlay .em-choice-controls select{box-sizing:border-box;width:100%;height:41px;border:1px solid #b9cee9;border-radius:5px;background:#fff;color:#123b73;padding:0 10px;font-size:13px}
+.em-choice-overlay .em-choice-controls button{height:41px;border:0;border-radius:5px;background:#19559a;color:#fff;font-size:12px;font-weight:700;cursor:pointer}
+.em-choice-overlay .em-choice-controls .em-choice-clear{background:#687c98}
+.em-choice-overlay .em-choice-table-wrap{overflow:auto;max-height:42vh}
+.em-choice-overlay .em-choice-table{border-collapse:collapse;width:100%;font-size:13px;text-align:left}
+.em-choice-overlay .em-choice-table th{background:#143e75;color:#fff;padding:11px 10px}
+.em-choice-overlay .em-choice-table td{padding:11px 10px;border-bottom:1px solid #d7e4f3}
+.em-choice-overlay .em-choice-table tbody tr:nth-child(even){background:#edf4fc}
+.em-choice-overlay .em-choice-table tbody tr:hover{background:#dceaff;cursor:pointer}
+.em-choice-overlay .em-choice-status{background:#bdf0d2;color:#12613a;border-radius:20px;padding:5px 12px;font-weight:700;font-size:11px}
+.em-choice-overlay .em-choice-foot{padding:16px 20px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #e1e8f1;font-size:12px}
+.em-choice-overlay .em-choice-foot button{background:#64748b;color:#fff;border:0;border-radius:5px;padding:13px 16px;cursor:pointer;font-weight:700}
+@media(max-width:650px){.em-choice-overlay .em-choice-controls{grid-template-columns:1fr 1fr}.em-choice-overlay .em-choice-query-label{grid-column:2}.em-choice-overlay .em-choice-foot{gap:10px}}

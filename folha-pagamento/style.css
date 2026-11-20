@@ -1,0 +1,250 @@
+*{box-sizing:border-box}body{margin:0;background:#f5f8fe;color:#103a70;font:12px Arial,sans-serif;padding:8px}button{cursor:pointer;border:1px solid #c5d7ed;background:#0756af;color:white;border-radius:6px;padding:9px 13px;font-weight:700;font-size:11px}button:disabled{opacity:.5;cursor:not-allowed}.head{display:flex;justify-content:space-between;align-items:center;background:#174c92;color:white;padding:11px 14px;border-radius:7px;margin-bottom:8px;font-size:16px}.head button{border-color:#88b9ed;background:transparent}.panel{background:white;border:1px solid #c8dbf5;border-radius:7px;margin-bottom:8px;overflow:hidden}.panel h3{font-size:12px;background:#e1edfc;color:#07478f;margin:0;padding:9px 12px}.fields{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;padding:11px}.fields label{font-weight:700;font-size:10px;min-width:0}.fields label.wide{grid-column:span 2}input,select{display:block;width:100%;border:1px solid #bfd5ef;border-radius:5px;background:#f4f8ff;color:#143f74;padding:8px;margin-top:5px;height:34px;font-size:12px}.pick{display:flex;gap:5px}.pick button{margin-top:5px}.actions{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 11px}.danger{background:#e43446}.green{background:#169451}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}.records{min-height:62px;padding:7px 12px;color:#234e80;max-height:160px;overflow:auto}.record{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e2eaf5;padding:6px 0}.record span:last-child{white-space:nowrap}.subtotal{background:#f1f7ff;padding:9px 12px;text-align:right;font-weight:bold}.subtotal b{margin-left:10px}.bottom .panel{min-height:190px}#resumo{padding:8px 12px}#resumo .record{padding:5px 0}.total{background:#0c4a95;color:white;display:flex;justify-content:space-between;padding:12px 14px;font-size:17px;font-weight:bold;margin:8px;border-radius:5px}.hint{font-size:10px;padding:0 12px}.foot{text-align:right;padding:8px}dialog{border:1px solid #8fb9e8;border-radius:10px;width:min(760px,95vw);max-height:80vh;color:#123f77}dialog::backdrop{background:#0b1d39a6}dialog h3{background:#124b94;color:white;padding:12px;margin:-1px -1px 12px}dialog input{margin-bottom:10px}.result{padding:9px;border-bottom:1px solid #dce8f7;cursor:pointer}.result:hover{background:#e7f1ff}@media(max-width:950px){.fields{grid-template-columns:repeat(3,minmax(0,1fr))}.twocol{grid-template-columns:1fr}}@media print{.actions,.head button,.foot,dialog{display:none!important}body{background:white}.records{max-height:none}}
+
+/* Padronização compacta com Cadastro de Funcionários */
+body{padding:10px 12px;background:#f4f8ff;color:#123b72;font-size:11px}.head{padding:10px 14px;font-size:15px;margin-bottom:8px}.fields{grid-template-columns:repeat(6,minmax(0,1fr));gap:7px 9px;padding:10px}.fields label{font-size:10px}.fields input,.fields select{height:30px;padding:5px 8px;margin-top:4px}.fields .pick button{height:30px;padding:5px 11px;margin-top:4px}.panel h3{padding:7px 10px;font-size:11px}.records{min-height:46px;max-height:115px;padding:5px 10px}.record{padding:4px 0}.subtotal{padding:6px 10px}.bottom .panel{min-height:0}.total{font-size:14px;padding:9px 12px}.actions{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;margin:10px 0 3px}.actions button{padding:10px 3px;font-size:10px;white-space:nowrap}.actions #novo{background:#0ca47c}.actions #alterar{background:#ee9d13}.actions #pagar{background:#13a35d}.actions #voltar,.actions #excluir{background:#e23d4c}.mini-summary{border:1px solid #c8dbf5;border-radius:6px;background:white;overflow:hidden}.mini-summary h3{background:#e1edfc;font-size:11px;padding:6px 10px;margin:0}.mini-summary #miniSummary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:6px}.mini-summary .mini-item{background:#f1f7ff;border-radius:4px;padding:5px 8px;display:flex;justify-content:space-between;gap:4px}.mini-item b{color:#064b99}.mini-item small{font-size:9px;font-weight:bold}.foot{display:none}#printArea{display:none}
+@media(max-width:1000px){.actions{grid-template-columns:repeat(5,minmax(0,1fr))}.fields{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@page{size:A4 portrait;margin:7mm}
+@media print{body{margin:0!important;padding:0!important;background:white!important}body>*:not(#printArea){display:none!important}#printArea{display:block!important;color:#142b48!important;font-family:Arial,sans-serif!important;width:196mm!important;margin:0 auto!important}.print-copy{height:137mm;max-height:137mm;overflow:hidden;padding:2mm 1mm;box-sizing:border-box;display:flex;flex-direction:column;gap:2mm;font-size:8.3px}.print-copy:first-child{border-bottom:1px dashed #5c7699}.print-header{display:grid;grid-template-columns:1fr 1fr;gap:4mm;min-height:20mm}.print-company{font-size:8.5px;line-height:1.4}.print-company strong{font-size:12px}.print-info{text-align:right;line-height:1.5}.print-info strong{font-size:11px;color:#08458a}.print-section{border:1px solid #bdd0e9;border-radius:2px;overflow:hidden}.print-section h4{background:#15549c;color:white;margin:0;padding:2mm;font-size:9px}.print-employee{display:grid;grid-template-columns:1fr 1fr;gap:1mm 3mm;padding:2mm}.print-grid{display:grid;grid-template-columns:1fr 1fr;gap:2mm;flex:1;min-height:0}.print-table{width:100%;border-collapse:collapse;font-size:8px}.print-table th{background:#e8f2ff;text-align:left}.print-table td,.print-table th{padding:1mm 1.4mm;border-bottom:1px solid #e1eaf5;vertical-align:top}.print-table td:last-child,.print-table th:last-child{text-align:right;white-space:nowrap}.print-totals{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;padding:2mm}.print-totals span{background:#e9f2fd;padding:2mm;text-align:center}.print-totals strong{display:block;font-size:10px;margin-top:1mm}.print-sign{display:flex;justify-content:space-between;align-items:flex-end;padding:2mm 3mm;min-height:11mm}.print-sign div{width:43%;text-align:center;border-top:1px solid #56708c;padding-top:1mm}.print-payments{max-height:24mm;overflow:hidden}.print-cut{display:none}}
+
+/* Pesquisa F12 compacta e pagamento integral em lote */
+dialog.lookup-dialog{width:min(430px,94vw);padding:10px 12px}dialog.lookup-dialog h3{margin:0 0 12px;padding:10px} .lookup-buttons{display:flex;gap:8px;justify-content:flex-end}.lookup-buttons button:last-child{background:#63758a}.batch-list{max-height:34vh;overflow-y:auto;border:1px solid #c8dbf5;border-radius:5px}.batch-row{display:grid;grid-template-columns:20px 1fr auto;align-items:center;gap:10px;padding:10px;border-bottom:1px solid #e2eaf5;cursor:pointer}.batch-row input,.batch-tools input{display:inline;width:auto;height:auto;margin:0}.batch-row small{display:block;color:#5e7897;margin-top:3px}.batch-tools{display:flex;justify-content:space-between;padding:6px 0 10px}.batch-total{display:flex;justify-content:space-between;background:#e7f1ff;padding:12px;margin:9px 0;font-weight:bold}.batch-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.batch-fields label{font-size:10px;font-weight:bold}.batch-warning{color:#bb2634;font-weight:bold;min-height:12px}@media(max-width:650px){.batch-fields{grid-template-columns:1fr}}
+
+/* A rolagem vertical da folha fica exclusivamente no contêiner principal. */
+html,body{height:auto!important;min-height:0!important;overflow-y:hidden!important;}
+
+/* PADRÃO VISUAL DE LANÇAMENTOS DE FUNCIONÁRIOS — sem altura artificial */
+html,body{height:auto!important;min-height:0!important;overflow-y:visible!important;overflow-x:hidden!important}
+body{background:#f4f8ff;padding:8px 10px 10px;font-family:Arial,sans-serif;color:#0b3975;font-size:11px}
+.head{background:#174b90;border-radius:8px;margin:0 0 8px;padding:11px 15px;font-size:16px;min-height:44px;box-shadow:none}
+.head button{font-size:10px;padding:8px 12px;border:1px solid #8bb8ef;border-radius:6px}
+.panel{border:1px solid #c9dbf7;border-radius:8px;background:#fff;margin-bottom:8px;box-shadow:none}
+.panel h3,.mini-summary h3{background:#e3eefc;color:#06478e;font-size:12px;font-weight:700;padding:8px 12px}
+.fields{padding:10px 12px 12px;gap:8px 10px}
+.fields label{font-size:10px;color:#0c3d7b;font-weight:700}
+.fields input,.fields select{background:#f3f7fd;border:1px solid #b8d2f4;height:32px;padding:6px 8px;border-radius:5px;font-size:11px}
+.fields .pick button{height:32px;margin-top:4px}
+.twocol{gap:10px}.records{min-height:48px;max-height:120px;padding:5px 10px}.subtotal{padding:7px 11px;background:#f0f6ff}
+.bottom .panel{min-height:0}.total{margin:8px 10px;padding:10px 12px;font-size:14px}
+.mini-summary{margin-top:1px;border-radius:7px}.mini-summary #miniSummary{min-height:22px}
+.actions{margin:10px 0 0;gap:7px}.actions button{min-height:36px;border-radius:5px;font-size:10px}
+@media print{html,body{overflow:visible!important}body{padding:0!important;background:#fff!important}}
+
+/* CPF ao lado da seleção, sem quebrar os campos de identificação. */
+@media(min-width:1001px){.fields{grid-template-columns:repeat(7,minmax(0,1fr))}}
+
+.actions{grid-template-columns:repeat(10,minmax(0,1fr))}.actions #reabrir{background:#7652b5}@media(max-width:1100px){.actions{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+/* Confirmação de reabertura: janela única no padrão LUCAS LIMA */
+.reopen-confirm{color:#173f78;font-size:14px;line-height:1.55;max-width:540px}
+.reopen-confirm p{margin:12px 0}.reopen-confirm .reopen-note{color:#526d91;font-size:12px}
+.reopen-buttons{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:10px;margin-top:22px}
+.reopen-buttons button{padding:11px 16px;border-radius:5px;cursor:pointer;font-weight:700;border:1px solid #b4c7df}
+.reopen-buttons .reopen-cancel{background:#e9eef6;color:#173f78}
+.reopen-buttons .reopen-accept{background:#1756a5;color:white;border-color:#1756a5}
+
+/* FOLHA DE PAGAMENTO — mesmo padrão compacto de dimensões do Cadastro de Unidades e Férias. */
+@media screen {
+body{background:#f3f7fd!important;font-family:Arial,sans-serif!important;font-size:12px!important;padding:10px 12px 12px!important}
+.head{min-height:40px!important;padding:6px 11px!important;border-radius:5px!important;background:#173e77!important;font-size:15px!important;margin:0 0 7px!important;box-shadow:none!important}
+.head button{font-size:10px!important;padding:6px 10px!important;background:#123c76!important;border:1px solid #b8d0f2!important;border-radius:5px!important}
+.panel{border-radius:6px!important;margin-bottom:8px!important}
+.panel h3,.mini-summary h3{font-size:12px!important;padding:7px 10px!important;background:#e1edfb!important;color:#123c76!important}
+.fields{gap:6px 9px!important;padding:7px 10px 9px!important}
+.fields label{font-size:10px!important;color:#123c76!important}
+.fields input,.fields select{min-height:31px!important;height:31px!important;padding:7px 8px!important;margin-top:3px!important;font-size:12px!important;border-radius:5px!important}
+.fields .pick button{height:31px!important;margin-top:3px!important}
+.twocol{gap:9px!important;align-items:stretch!important}
+.twocol>.panel{display:flex!important;flex-direction:column!important;min-height:0!important}
+.records{min-height:45px!important;max-height:120px!important;padding:5px 10px!important}
+.record{padding:5px 3px!important}
+.subtotal{padding:7px 11px!important;background:#f0f6ff!important}
+.total{margin:8px 10px!important;padding:10px!important;font-size:14px!important}
+.mini-summary{margin-top:1px!important;border-radius:6px!important}
+.actions{gap:5px!important;margin:7px 0 0!important}
+.actions button{min-height:34px!important;padding:8px 5px!important;font-size:10px!important;border-radius:5px!important}
+}
+
+/* Confirmações internas, sem caixas nativas do navegador */
+.folha-overlay-confirm{position:fixed;inset:0;z-index:99999;background:rgba(4,24,55,.62);display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+.folha-confirm-box{width:min(480px,100%);background:white;border-radius:9px;overflow:hidden;box-shadow:0 12px 36px #061e3d70;color:#123564}
+.folha-confirm-box h3{margin:0;padding:16px 19px;background:#1b4075;color:white;font-size:16px}
+.folha-confirm-box p{padding:22px 19px;margin:0;white-space:pre-line;line-height:1.5;font-size:14px}
+.folha-confirm-actions{display:flex;gap:10px;justify-content:flex-end;padding:0 19px 18px}
+.folha-confirm-actions button{background:#1757a9;color:white;border:0;border-radius:5px;padding:11px 19px;cursor:pointer;font-weight:700}
+.folha-confirm-actions button[data-no]{background:#6b7e97}
+
+/* Pesquisa de folhas no padrão dos cadastros */
+.folha-search-panel{margin-top:9px!important;background:#fff!important;border:1px solid #c8daf4!important;border-radius:7px!important;overflow:hidden}
+.folha-search-filters{display:grid;grid-template-columns:3fr 1fr 1fr 1.3fr;gap:9px;padding:9px 10px}
+.folha-search-filters label{font-size:10px;font-weight:700;color:#123c76}
+.folha-search-filters input,.folha-search-filters select{display:block;width:100%;height:32px;margin-top:4px;padding:5px 8px;border:1px solid #c3d4ef;border-radius:5px;background:#fff;color:#153d75;box-sizing:border-box}
+.folha-search-scroll{overflow-x:auto;padding:0 10px}
+.folha-search-table{width:100%;border-collapse:collapse;font-size:11px;color:#143d76}
+.folha-search-table th{background:#e1edfb;text-align:left;padding:10px 8px}
+.folha-search-table td{padding:9px 8px;border-bottom:1px solid #d9e4f4}
+.folha-search-table tbody tr[data-folha-numero]{cursor:pointer}
+.folha-search-table tbody tr[data-folha-numero]:hover{background:#edf5ff}
+.folha-search-count{padding:8px 10px;font-size:10px;color:#325a8b}
+.actions{grid-template-columns:repeat(9,minmax(0,1fr))!important}
+@media(max-width:900px){.folha-search-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.actions{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+
+/* Botão PESQUISAR ao lado do filtro SITUAÇÃO */
+.folha-search-filters{grid-template-columns:3fr 1fr 1fr 1.3fr auto;align-items:end}
+.folha-search-button{height:32px;min-width:105px;padding:0 14px;border:0;border-radius:5px;background:#1757a6;color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+.folha-search-button:hover{background:#0e4489}
+@media(max-width:900px){.folha-search-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.folha-search-button{width:100%}}
+
+/* Janela de atalhos no mesmo padrão de Lançamentos de Funcionários */
+#modal:has(.folha-short-row){width:min(475px,95vw);padding:0;border:0;border-radius:12px;overflow:hidden;box-shadow:0 14px 40px #092d5966}
+#modal:has(.folha-short-row) h3{background:#1e5797;color:white;padding:22px;margin:0;font-size:17px;line-height:1.35}
+#modal:has(.folha-short-row) #modalBody{padding:17px 22px 0}
+.folha-short-row{display:flex;align-items:center;gap:15px;padding:10px 0;border-bottom:1px solid #dbe5f1;font-size:14px}
+.folha-short-row strong{min-width:54px;text-align:center;background:#eaf2ff;border:1px solid #bfd6ff;border-radius:5px;padding:9px;color:#103d76;font-size:14px}
+#modal:has(.folha-short-row) #fechar{display:block;margin:12px 20px 12px auto;background:#1e5797;font-size:14px;padding:11px 21px}
+
+/* V560: janela F12 no mesmo padrão visual de Pedidos de Compra */
+dialog.lookup-dialog{width:min(475px,calc(100vw - 32px))!important;padding:0!important;border:0!important;border-radius:11px!important;overflow:hidden!important;box-shadow:0 18px 44px #001b3a55!important;}
+dialog.lookup-dialog>h3{background:#245b97!important;color:#fff!important;font-size:17px!important;font-weight:800!important;padding:20px 22px!important;margin:0!important;border-radius:0!important;}
+dialog.lookup-dialog>#modalBody{padding:26px 22px 28px!important;}
+dialog.lookup-dialog #fechar{display:none!important;}
+dialog.lookup-dialog .lookup-description{font-size:13px!important;font-weight:400!important;margin:4px 0 18px!important;color:#234875!important;}
+dialog.lookup-dialog .lookup-compact label{font-size:12px!important;font-weight:700!important;color:#24446d!important;}
+dialog.lookup-dialog .lookup-compact input{height:44px!important;background:#fff!important;border:1px solid #a9c6ee!important;border-radius:7px!important;margin:8px 0 14px!important;padding:12px!important;font-size:13px!important;}
+dialog.lookup-dialog .lookup-buttons{display:flex!important;justify-content:center!important;gap:10px!important;padding:0!important;margin-top:14px!important;}
+dialog.lookup-dialog .lookup-buttons button{min-width:126px!important;height:41px!important;background:#195ca6!important;color:#fff!important;border:1px solid #b7d0f5!important;font-size:13px!important;}
+dialog.lookup-dialog .lookup-buttons button:last-child{background:#eef4ff!important;color:#185495!important;}
+
+/* V569: seletor de funcionário da folha no padrão verde com + */
+.fields .pick #pick{background:#16a34a!important;border-color:#16a34a!important;color:#fff!important;font-size:19px!important;font-weight:800!important;min-width:34px!important;line-height:1!important}
+
+/* V575 — mesmo modelo da confirmação de reabertura */
+dialog#modal.ll-batch-viewport[open]{position:fixed!important;left:50%!important;top:50%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important;margin:0!important;width:min(620px,calc(100vw - 36px))!important;max-width:calc(100vw - 36px)!important;max-height:calc(100dvh - 36px)!important;padding:0!important;overflow:hidden!important;border:0!important;border-radius:12px!important;background:#fff!important;color:#173e76!important;box-shadow:0 16px 45px rgba(0,0,0,.28)!important}
+dialog#modal.ll-batch-viewport #modalTitle{margin:0!important;padding:19px 20px!important;background:#1e477c!important;color:white!important;font-size:16px!important;font-weight:800!important;border-radius:0!important}
+dialog#modal.ll-batch-viewport #modalBody{padding:16px 20px 18px!important;max-height:calc(100dvh - 105px)!important;overflow-y:auto!important;overscroll-behavior:contain!important}
+dialog#modal.ll-batch-viewport .batch-list{max-height:min(28dvh,210px)!important;overflow:auto!important}
+dialog#modal.ll-batch-viewport .batch-fields{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+dialog#modal.ll-batch-viewport .batch-fields input,dialog#modal.ll-batch-viewport .batch-fields select{min-width:0!important}
+dialog#modal.ll-batch-viewport .batch-warning{margin:5px 0!important;min-height:0!important}
+dialog#modal.ll-batch-viewport .batch-actions{display:flex!important;justify-content:center!important;align-items:center!important;gap:8px!important;margin:12px 0 0!important;flex-wrap:wrap!important}
+dialog#modal.ll-batch-viewport .batch-actions button{margin:0!important;padding:12px 17px!important;font-size:12px!important}
+dialog#modal.ll-batch-viewport #batchClose{background:#edf4ff!important;color:#14539b!important;border:1px solid #b6d2fa!important}
+dialog#modal.ll-batch-viewport #confirmBatch{background:#1260b9!important;color:#fff!important;border:1px solid #1260b9!important}
+dialog#modal.ll-batch-viewport > #fechar{display:none!important}
+@media(max-width:550px){dialog#modal.ll-batch-viewport .batch-fields{grid-template-columns:1fr!important}}
+
+/* V598 — pesquisa em uma linha com seletor + */
+.folha-search-filters{display:grid!important;grid-template-columns:minmax(230px,3fr) minmax(95px,1fr) minmax(95px,1fr) minmax(125px,1.3fr) 105px!important;align-items:end;gap:9px;overflow-x:auto}
+.folha-search-filters>label{min-width:0}
+.folha-employee-control{display:flex;align-items:center;gap:5px;margin-top:4px}
+.folha-employee-control input{margin-top:0!important;flex:1;min-width:0;cursor:pointer;background:#f3f7ff!important}
+.folha-employee-control button{flex:0 0 33px;height:32px;border:0;border-radius:5px;background:#009f78;color:#fff;font-size:20px;font-weight:bold;cursor:pointer}
+.folha-search-filters .folha-search-button{width:105px}
+@media(max-width:900px){.folha-search-filters{grid-template-columns:minmax(230px,3fr) minmax(95px,1fr) minmax(95px,1fr) minmax(125px,1.3fr) 105px!important}}
+
+/* Observações da folha e impressão */
+.folha-observacoes-conteudo{padding:9px 10px}
+#observacoesFolha{display:block;width:100%;min-height:66px;resize:vertical;box-sizing:border-box;border:1px solid #c3d4ef;border-radius:5px;padding:9px;font:12px Arial,sans-serif;color:#153d75;background:white}
+#observacoesFolha[readonly]{background:#f0f3f8}
+.print-observacoes-texto{padding:7px 8px;white-space:normal;overflow-wrap:anywhere;font-size:11px;line-height:1.45}
+
+/* V755: bordas arredondadas no cabeçalho INÍCIO, iguais aos quadros */
+.ll-home-v752 .ll-home-toolbar-top{border-radius:14px!important;margin:9px 0 9px!important;overflow:hidden!important;}
+
+/* V757: remover somente o botao ATALHOS adicionado ao mural de avisos.
+   Os tres controles originais NOVO, ALTERAR e EXCLUIR permanecem. */
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-actions > button:nth-child(n+4){display:none!important;}
+
+/* V772: mural compacto, apenas titulo e observacao, sem rolagem nem sobreposicao */
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-body{overflow:hidden!important;overflow-y:hidden!important;scrollbar-width:none!important;padding:3px 8px!important;min-width:0!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice{display:block!important;grid-template-columns:none!important;min-width:0!important;max-width:100%!important;padding:3px 5px!important;line-height:1.15!important;overflow:hidden!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text{display:block!important;min-width:0!important;max-width:100%!important;overflow:hidden!important;overflow-wrap:anywhere!important;word-break:normal!important;white-space:normal!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text strong{display:block!important;font-size:12px!important;line-height:1.2!important;white-space:normal!important;overflow-wrap:anywhere!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text p{display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;line-clamp:2!important;margin:2px 0 0!important;font-size:11px!important;line-height:1.2!important;white-space:normal!important;overflow:hidden!important;overflow-wrap:anywhere!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-meta,.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-pin{display:none!important}
+
+/* V773 — cabeçalhos compactos e três avisos visíveis sem barra de rolagem. */
+.ll-home-v752 .ll-home-grid-v754 .ll-home-card-head{
+  flex:0 0 37px!important;min-height:37px!important;height:37px!important;
+  padding:4px 9px!important;gap:6px!important;font-size:13px!important;
+  line-height:1.1!important;white-space:nowrap!important;overflow:hidden!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-heading-label{font-size:13px!important;min-width:0!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-heading-icon{flex:0 0 19px!important;width:19px!important;height:19px!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-heading-icon svg{width:19px!important;height:19px!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-body{
+  display:grid!important;grid-template-rows:repeat(var(--ll-notice-count,3),minmax(0,1fr))!important;
+  align-content:stretch!important;min-height:0!important;flex:1 1 0!important;
+  overflow:hidden!important;padding:0 7px!important;gap:0!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice{
+  display:flex!important;align-items:center!important;min-height:0!important;
+  padding:1px 5px!important;margin:0!important;overflow:hidden!important;
+  border-bottom:1px solid #bed7c6!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text{min-height:0!important;width:100%!important;overflow:hidden!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text strong{
+  font-size:10px!important;line-height:1.05!important;white-space:nowrap!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text p{
+  display:block!important;font-size:9px!important;line-height:1.08!important;
+  margin:1px 0 0!important;white-space:nowrap!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-actions{
+  padding:3px 4px!important;gap:4px!important;min-height:28px!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-actions .ll-home-action{
+  font-size:10px!important;padding:4px 7px!important;line-height:1.1!important;
+}
+
+
+/* V774 — compactacao uniforme dos quatro quadros do INICIO. */
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-card-head{
+  flex:0 0 37px!important;height:37px!important;min-height:37px!important;
+  padding:4px 8px!important;gap:5px!important;overflow:hidden!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-heading-label{
+  font-size:12px!important;line-height:1.1!important;letter-spacing:0!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-heading-icon,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-heading-icon svg{
+  width:18px!important;height:18px!important;flex:0 0 18px!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2) .ll-home-birthday{
+  display:grid!important;grid-template-columns:minmax(0,1fr) 65px!important;
+  min-height:0!important;padding:5px 7px!important;gap:5px!important;
+  font-size:10px!important;line-height:1.15!important;overflow:hidden!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2) .ll-home-birthday-name{
+  font-size:10px!important;line-height:1.15!important;white-space:nowrap!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2) .ll-home-birthday-date{
+  font-size:10px!important;line-height:1.15!important;white-space:nowrap!important;text-align:right!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3) .ll-home-rank-columns,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3) .ll-home-rank-row,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5) .ll-home-rank-columns,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5) .ll-home-rank-row{
+  display:grid!important;grid-template-columns:30px minmax(0,1fr) 79px!important;
+  min-height:0!important;padding:5px 6px!important;gap:4px!important;
+  font-size:10px!important;line-height:1.12!important;align-items:center!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3) .ll-home-rank-columns,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5) .ll-home-rank-columns{
+  font-size:9px!important;min-height:28px!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-rank-name,
+.ll-home-v752 .ll-home-grid-v754 .ll-home-rank-value{
+  font-size:10px!important;line-height:1.12!important;min-width:0!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-medal{font-size:10px!important}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3){overflow:hidden!important}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5){overflow-y:auto!important;scrollbar-width:thin!important}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2){overflow-y:auto!important;scrollbar-width:thin!important}
+
+/* V792: link externo do suporte preserva o estilo dos itens. */
+a.ll-support-item-v776{text-decoration:none!important;box-sizing:border-box}

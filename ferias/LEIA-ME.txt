@@ -1,0 +1,8 @@
+FÉRIAS — LUCAS LIMA
+Abra LUCAS_LIMA/index.html > ADMINISTRATIVO > FÉRIAS.
+Os cálculos são estimativas baseadas no salário fixo e nos descontos informados; não calculam automaticamente INSS, IRRF, médias variáveis, abono em hipóteses especiais, férias coletivas ou situações excepcionais. Confirme com departamento pessoal/contabilidade antes de gerar ou pagar.
+A impressão A4 tem duas vias verticais. Os dados são armazenados localmente no navegador usado.
+
+ATUALIZAÇÃO: Faltas do tipo FALTA SEM JUSTIFICATIVA no período aquisitivo reduzem automaticamente os dias de direito conforme art. 130 da CLT. O valor exibido é uma referência da redução da remuneração integral, não é subtraído novamente do valor calculado dos dias efetivamente concedidos. Conferir exceções legais e folha antes de gerar.
+
+ATUALIZAÇÃO INSS: cálculo progressivo estimado para vínculo CLT, com tabelas de 2025 e 2026. Outros vínculos não recebem desconto automático CLT. O abono pecuniário e seu terço ficam fora da base. Competências sem tabela não calculam INSS e mostram alerta. Conferir integração com a folha e IRRF antes de pagar.

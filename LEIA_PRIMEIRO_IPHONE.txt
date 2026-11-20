@@ -1,0 +1,20 @@
+LUCAS LIMA — IPHONE INDEPENDENTE — VERSÃO DE TESTES
+
+Este pacote contém a interface e módulos do sistema anterior adaptados para iniciar SEM PostgreSQL.
+Os dados são locais ao navegador do iPhone e não são sincronizados com o computador.
+NÃO É UM ARQUIVO IPA E NÃO PODE SER INSTALADO DIRETAMENTE PELO ZIP.
+
+COMO INSTALAR:
+1. Publique a pasta LUCAS_LIMA_IPHONE em uma hospedagem HTTPS de arquivos estáticos.
+2. Abra o endereço HTTPS pelo Safari no iPhone.
+3. Toque em Compartilhar > Adicionar à Tela de Início.
+4. Abra o ícone LUCAS LIMA.
+5. Use o botão Backup iPhone para salvar backups JSON e restaurá-los.
+
+IMPORTANTE:
+- A primeira abertura precisa de internet; depois o cache offline pode funcionar.
+- O armazenamento local do Safari não é equivalente a um banco de dados durável.
+- Não use com dados reais antes de testar TODOS os fluxos de caixa, estoque, vendas e recuperação de backup.
+- Recursos que dependem de serviços externos, impressão ou recursos do Windows podem não funcionar.
+- Para funcionar no iPhone, ainda precisa de publicação HTTPS; não há hospedagem incluída.
+- Nenhum dado do banco PostgreSQL do computador foi incluído.

@@ -1,0 +1,1 @@
+LUCAS LIMA — ajuste de proporções. Formulário Cadastro da Loja centralizado e com largura máxima de 1020px, altura dos campos e fontes ampliadas em relação à versão anterior. Sem ampliação horizontal ou zoom artificial. Para monitores de baixa altura, alguns módulos extensos ainda podem precisar de rolagem interna.

@@ -1,0 +1,31 @@
+LUCAS LIMA — FOLHA DE PAGAMENTO (PROTÓTIPO LOCAL)
+
+COMO ABRIR
+1. Extraia o arquivo ZIP.
+2. Abra index.html no Google Chrome, Edge ou outro navegador moderno.
+3. Teste os lançamentos e clique em SALVAR. Os dados ficam no armazenamento local do navegador.
+
+FUNCIONALIDADES DE DEMONSTRAÇÃO
+- Layout azul e branco da Folha de Pagamento, campo RESCISÃO na mesma tela.
+- Competência mensal e uma folha por funcionário/mês/ano.
+- Faltas por data com indicador de atestado, nome do anexo e desconto pelo número real de dias do mês.
+- Horas extras com percentual livre, adicionais e descontos.
+- Adiantamentos e pagamentos parciais com histórico demonstrativo.
+- Comissões sobre vendas informadas como BAIXADAS, com regra de remuneração mínima pelo salário fixo.
+- Pesquisa por número, funcionário, competência e situação; atalho F12.
+- Impressão A4 via navegador.
+
+LIMITAÇÕES IMPORTANTES
+- Este é um protótipo funcional local, NÃO um ERP completo em produção.
+- Dados, usuários, vendas, formas de pagamento e lançamentos financeiros são demonstrativos.
+- Não há banco de dados remoto, login real, permissões seguras, sincronização entre computadores ou integração efetiva com Vendas/Financeiro.
+- Anexos de atestados não são armazenados: somente o nome do arquivo é registrado.
+- Cálculos de INSS, IRRF, FGTS, DSR, verbas rescisórias e demais obrigações trabalhistas NÃO estão implementados. Validar cálculos com profissional responsável.
+- Relatório é resumido; relatórios analíticos completos e aprovação de diferenças de comissões dependem do backend.
+- Folhas PAGAS ficam bloqueadas para alterações, inclusive estorno, conforme a definição de não reabertura; estorno administrativo exige implementação futura.
+- Os dados locais podem ser perdidos se o navegador limpar armazenamento.
+
+ARQUIVOS
+index.html — interface
+style.css — estilos
+app.js — lógica de demonstração

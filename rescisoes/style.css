@@ -1,0 +1,172 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font:12px Arial,sans-serif;color:#07437d;background:#f3f7fe}main{padding:8px 12px 10px}.title{background:#174d91;color:#fff;font-size:16px;font-weight:bold;border-radius:8px;padding:13px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.title button{background:transparent;border:1px solid #8cb8ed}section{background:white;border:1px solid #c4d9f9;border-radius:7px;overflow:hidden;margin-bottom:9px}h3{font-size:12px;background:#e3effd;color:#064b92;margin:0 0 9px;padding:9px 12px;font-weight:bold}.fields{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding:2px 11px 12px}.fields label{min-width:0;font-size:10px;font-weight:bold;color:#054886}.fields .wide{grid-column:span 2}input{display:block;width:100%;height:31px;margin-top:4px;padding:6px 8px;border:1px solid #b8d2f9;border-radius:5px;background:#fff;color:#144779;font-size:12px}input[readonly]{background:#f1f5fc}.withbtn{display:flex;gap:5px;align-items:end}.withbtn input{flex:1;min-width:0}.withbtn button{height:31px;margin-top:4px;min-width:35px;font-size:18px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:9px}.twocol section{min-width:0}.mini{grid-template-columns:repeat(2,minmax(0,1fr))}.rows{min-height:54px;padding:0 11px 7px}.record{display:flex;justify-content:space-between;gap:10px;padding:6px 2px;border-bottom:1px solid #e5eefc}.record b{white-space:nowrap}.subtotal{display:flex;justify-content:space-between;padding:8px 12px;background:#eef5ff;font-size:11px;font-weight:bold}.total{display:flex;justify-content:space-between;background:#12509c;color:white;margin:7px 10px 12px;padding:12px;border-radius:5px;font-weight:bold;font-size:13px}.note{padding:0 12px;color:#476888;font-size:10px}.mini-summary h3{margin:0}.mini-summary #miniSummary{display:flex;justify-content:space-between;padding:8px 12px;gap:10px}.mini-summary b{font-size:11px}footer{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;margin:7px 0 0}button{background:#0956a9;color:white;border:0;border-radius:5px;padding:9px 8px;font-size:10px;font-weight:bold;cursor:pointer}footer button{white-space:nowrap;padding:11px 3px}.green{background:#0aa578}.orange{background:#ed9c16}.red{background:#df3d4e}button:disabled{opacity:.45;cursor:not-allowed}dialog{width:min(720px,94vw);border:1px solid #a3c7f2;border-radius:9px;padding:10px;background:#fff;color:#104d8c;box-shadow:0 10px 50px #183f6e77}dialog::backdrop{background:#061b3d99}.modal-head{background:#15509b;color:white;padding:13px;font-weight:bold;margin-bottom:10px}.modal-close{text-align:right;padding-top:10px}.result{padding:10px;border-bottom:1px solid #dce9f8;cursor:pointer}.result:hover{background:#e8f2ff}.modal-input{margin-bottom:10px}.dialog-buttons{display:flex;gap:8px;margin-top:12px}@media(max-width:950px){.fields{grid-template-columns:repeat(3,1fr)}.twocol{grid-template-columns:1fr}footer{grid-template-columns:repeat(3,1fr)}}@media print{.title button,footer,dialog{display:none!important}body{background:#fff}main{padding:0}.note{font-size:9px}}
+/* Ações padronizadas em duas linhas de cinco botões */
+footer{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:7px!important}footer button{width:100%!important;min-width:0!important;white-space:normal!important;min-height:35px!important;font-size:11px!important}footer .purple{background:#7049b8!important;color:white!important}@media(max-width:760px){footer{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* Padrao compacto de tamanho do Cadastro de Unidades, Folha e Ferias. */
+body{font-family:Arial,sans-serif;font-size:12px;background:#f3f7fd}
+main{padding:10px 12px 12px;max-width:none;margin:0 auto}
+.title{min-height:40px;padding:6px 11px;border-radius:5px;background:#173e77;font-size:15px;margin-bottom:7px}
+.title button{font-size:10px;padding:6px 10px;background:#123c76;border:1px solid #b8d0f2;border-radius:5px}
+section{border-radius:6px;margin-bottom:8px}
+h3{font-size:12px;padding:7px 10px;margin-bottom:7px;background:#e1edfb;color:#123c76}
+.fields{gap:6px 9px;padding:0 10px 9px}
+.fields label{font-size:10px;color:#123c76}
+input{height:31px;min-height:31px;padding:7px 8px;margin-top:3px;font-size:12px;border-radius:5px}
+.withbtn{align-items:stretch;gap:5px;margin-top:3px;height:31px}
+.withbtn input{height:31px;min-height:31px;margin:0;min-width:0}
+.withbtn button{height:31px;min-height:31px;margin:0;padding:0 10px;display:flex;align-items:center;justify-content:center}
+.twocol{gap:9px;align-items:stretch}
+.twocol section{display:flex;flex-direction:column;min-height:0}
+.rows{padding:2px 10px 6px;flex:1 1 auto}
+.record{padding:5px 2px}
+.subtotal{padding:7px 10px}
+.total{padding:10px}
+.note{padding:0 10px}
+.mini-summary #miniSummary{padding:7px 10px}
+footer{gap:6px!important;margin:7px 0 0}
+footer button{min-height:34px!important;padding:8px 4px!important;font-size:10px!important}
+@media(max-width:950px){.fields{grid-template-columns:repeat(3,minmax(0,1fr))}.twocol{grid-template-columns:1fr}}
+@media print{.title button,footer,dialog{display:none!important}}
+
+/* Rescisões: ações em uma linha e pesquisa inferior */
+footer{grid-template-columns:repeat(9,minmax(0,1fr))!important}footer button{font-size:9px!important;white-space:nowrap!important;padding:8px 2px!important}
+.search-resc{margin-top:9px;background:white;border:1px solid #cbdcf4;border-radius:6px;padding-bottom:8px}.search-resc h3{margin:5px 6px 8px}.search-fields{display:grid;grid-template-columns:3fr 1fr 1fr 1.25fr 105px;gap:8px;align-items:end;padding:0 10px 8px}.search-fields label{font-size:10px;font-weight:bold;color:#153e77}.search-fields input,.search-fields select{width:100%;height:32px;min-height:32px;border:1px solid #c0d3f1;border-radius:5px;background:#fff;color:#123b70;padding:5px 8px;font-size:12px;margin-top:4px}.search-fields button{height:33px;border:0;border-radius:5px;background:#1758ad;color:white;font-weight:bold;font-size:11px;cursor:pointer}.search-table-wrap{padding:0 10px}.search-table{width:100%;border-collapse:collapse;font-size:11px;color:#123b70}.search-table th{background:#e0ebfa;text-align:left;padding:9px 8px}.search-table td{padding:9px 8px;border-bottom:1px solid #dce5f5}.search-table tbody tr[data-res]{cursor:pointer}.search-table tbody tr[data-res]:hover{background:#edf5ff}.search-count{font-size:10px;color:#245187;padding:7px 10px 0}@media(max-width:1050px){footer{grid-template-columns:repeat(5,minmax(0,1fr))!important}.search-fields{grid-template-columns:2fr 1fr 1fr}.search-fields button{align-self:end}}@media(max-width:650px){footer{grid-template-columns:repeat(2,minmax(0,1fr))!important}.search-fields{grid-template-columns:1fr 1fr}}
+
+/* Atalhos no mesmo padrão visual da folha de pagamento */
+dialog:has(.resc-short-row){width:min(475px,94vw);padding:0;border:0;border-radius:13px;overflow:hidden}dialog:has(.resc-short-row) .modal-head{margin:0;padding:20px 22px;background:#245a99;font-size:15px}dialog:has(.resc-short-row) #modalBody{padding:18px 22px 0}.resc-short-row{display:flex;align-items:center;gap:16px;border-bottom:1px solid #d8e4f3;padding:10px 0;font-size:13px}.resc-short-row strong{display:inline-flex;align-items:center;justify-content:center;width:54px;height:36px;background:#eaf2ff;border:1px solid #bcd5ff;border-radius:6px;color:#124a94}.resc-short-row span{flex:1}dialog:has(.resc-short-row) .modal-close{padding:15px 20px 16px}dialog:has(.resc-short-row) .modal-close button{font-size:13px;padding:11px 22px}
+
+/* Identificacao padronizada: seis colunas e campos de selecao alinhados. */
+.resc-identification{grid-template-columns:repeat(6,minmax(0,1fr));align-items:end;gap:8px 9px}
+.resc-identification label{display:block;min-width:0;align-self:end;line-height:1.3}
+.resc-identification .wide{grid-column:span 2}
+.resc-identification .choice-field{grid-column:span 3}
+.resc-identification .notes-field{grid-column:span 6}
+.resc-identification input,.resc-identification select{display:block;width:100%;height:31px;min-height:31px;margin-top:4px;padding:6px 8px;border:1px solid #b8d2f9;border-radius:5px;background:#fff;color:#144779;font:12px Arial,sans-serif;min-width:0}
+.resc-identification input[readonly]{background:#f1f5fc}
+.resc-identification .withbtn{margin-top:4px}
+.resc-identification .withbtn input{margin-top:0}
+.resc-identification .choice-field select{appearance:auto;text-overflow:ellipsis}
+@media(max-width:950px){.resc-identification{grid-template-columns:repeat(3,minmax(0,1fr))}.resc-identification .choice-field{grid-column:span 3}.resc-identification .notes-field{grid-column:span 3}}
+@media(max-width:540px){.resc-identification{grid-template-columns:repeat(2,minmax(0,1fr))}.resc-identification .wide,.resc-identification .choice-field,.resc-identification .notes-field{grid-column:span 2}}
+
+/* V646: área de lançamentos manuais; demais seções originais preservadas */
+.resc-manual{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px 10px}
+.resc-manual label{font-size:10px;font-weight:bold;color:#143d78}
+.resc-manual input,.resc-manual select{width:100%;height:32px;box-sizing:border-box;margin-top:5px;border:1px solid #bed3f0;border-radius:5px;padding:5px 8px;background:#fff;color:#143d78}
+.resc-wide{grid-column:1/-1}
+.resc-add{display:flex;justify-content:flex-end}
+#lancAdicionar{background:#119b60;color:#fff;border:0;border-radius:5px;padding:10px 15px;cursor:pointer;font-weight:bold}
+.resc-lista{padding:0 10px 10px;min-height:28px}
+.resc-lanc-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #d9e5f2;font-size:11px;color:#143d78}
+.resc-lanc-item span{flex:1;overflow-wrap:anywhere}
+.resc-lanc-item button{background:#c62c3a;color:#fff;border:0;border-radius:4px;padding:7px;cursor:pointer}
+.resc-lanc-item button:disabled{opacity:.5}
+
+/* V653: observações do resumo, independentes das observações de identificação */
+.resc-observacoes-resumo .resc-observacoes-body{padding:10px}
+.resc-observacoes-resumo textarea{display:block;width:100%;box-sizing:border-box;min-height:76px;resize:vertical;border:1px solid #b8d2f9;border-radius:5px;padding:10px;background:#fff;color:#144779;font:12px Arial,sans-serif}
+.resc-observacoes-resumo textarea:disabled{background:#f1f5fc}
+
+/* V662 — seletor de funcionário da pesquisa */
+.resc-search-employee{display:flex;align-items:center;gap:5px;margin-top:4px}.resc-search-employee input{margin-top:0!important;min-width:0;flex:1;cursor:pointer;background:#f3f7ff!important}.search-fields .resc-search-employee button{flex:0 0 34px;width:34px;height:32px;background:#009f78;color:white;font-size:20px;font-weight:bold;border-radius:5px}
+
+/* V755: bordas arredondadas no cabeçalho INÍCIO, iguais aos quadros */
+.ll-home-v752 .ll-home-toolbar-top{border-radius:14px!important;margin:9px 0 9px!important;overflow:hidden!important;}
+
+/* V757: remover somente o botao ATALHOS adicionado ao mural de avisos.
+   Os tres controles originais NOVO, ALTERAR e EXCLUIR permanecem. */
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-actions > button:nth-child(n+4){display:none!important;}
+
+/* V772: mural compacto, apenas titulo e observacao, sem rolagem nem sobreposicao */
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-body{overflow:hidden!important;overflow-y:hidden!important;scrollbar-width:none!important;padding:3px 8px!important;min-width:0!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice{display:block!important;grid-template-columns:none!important;min-width:0!important;max-width:100%!important;padding:3px 5px!important;line-height:1.15!important;overflow:hidden!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text{display:block!important;min-width:0!important;max-width:100%!important;overflow:hidden!important;overflow-wrap:anywhere!important;word-break:normal!important;white-space:normal!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text strong{display:block!important;font-size:12px!important;line-height:1.2!important;white-space:normal!important;overflow-wrap:anywhere!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text p{display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;line-clamp:2!important;margin:2px 0 0!important;font-size:11px!important;line-height:1.2!important;white-space:normal!important;overflow:hidden!important;overflow-wrap:anywhere!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-meta,.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-pin{display:none!important}
+
+/* V773 — cabeçalhos compactos e três avisos visíveis sem barra de rolagem. */
+.ll-home-v752 .ll-home-grid-v754 .ll-home-card-head{
+  flex:0 0 37px!important;min-height:37px!important;height:37px!important;
+  padding:4px 9px!important;gap:6px!important;font-size:13px!important;
+  line-height:1.1!important;white-space:nowrap!important;overflow:hidden!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-heading-label{font-size:13px!important;min-width:0!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-heading-icon{flex:0 0 19px!important;width:19px!important;height:19px!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-heading-icon svg{width:19px!important;height:19px!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-body{
+  display:grid!important;grid-template-rows:repeat(var(--ll-notice-count,3),minmax(0,1fr))!important;
+  align-content:stretch!important;min-height:0!important;flex:1 1 0!important;
+  overflow:hidden!important;padding:0 7px!important;gap:0!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice{
+  display:flex!important;align-items:center!important;min-height:0!important;
+  padding:1px 5px!important;margin:0!important;overflow:hidden!important;
+  border-bottom:1px solid #bed7c6!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text{min-height:0!important;width:100%!important;overflow:hidden!important}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text strong{
+  font-size:10px!important;line-height:1.05!important;white-space:nowrap!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-text p{
+  display:block!important;font-size:9px!important;line-height:1.08!important;
+  margin:1px 0 0!important;white-space:nowrap!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-actions{
+  padding:3px 4px!important;gap:4px!important;min-height:28px!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-notice-actions .ll-home-action{
+  font-size:10px!important;padding:4px 7px!important;line-height:1.1!important;
+}
+
+
+/* V774 — compactacao uniforme dos quatro quadros do INICIO. */
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-card-head{
+  flex:0 0 37px!important;height:37px!important;min-height:37px!important;
+  padding:4px 8px!important;gap:5px!important;overflow:hidden!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-heading-label{
+  font-size:12px!important;line-height:1.1!important;letter-spacing:0!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-heading-icon,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card .ll-home-heading-icon svg{
+  width:18px!important;height:18px!important;flex:0 0 18px!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2) .ll-home-birthday{
+  display:grid!important;grid-template-columns:minmax(0,1fr) 65px!important;
+  min-height:0!important;padding:5px 7px!important;gap:5px!important;
+  font-size:10px!important;line-height:1.15!important;overflow:hidden!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2) .ll-home-birthday-name{
+  font-size:10px!important;line-height:1.15!important;white-space:nowrap!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2) .ll-home-birthday-date{
+  font-size:10px!important;line-height:1.15!important;white-space:nowrap!important;text-align:right!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3) .ll-home-rank-columns,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3) .ll-home-rank-row,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5) .ll-home-rank-columns,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5) .ll-home-rank-row{
+  display:grid!important;grid-template-columns:30px minmax(0,1fr) 79px!important;
+  min-height:0!important;padding:5px 6px!important;gap:4px!important;
+  font-size:10px!important;line-height:1.12!important;align-items:center!important;
+}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3) .ll-home-rank-columns,
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5) .ll-home-rank-columns{
+  font-size:9px!important;min-height:28px!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-rank-name,
+.ll-home-v752 .ll-home-grid-v754 .ll-home-rank-value{
+  font-size:10px!important;line-height:1.12!important;min-width:0!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+.ll-home-v752 .ll-home-grid-v754 .ll-home-medal{font-size:10px!important}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(3){overflow:hidden!important}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(5){overflow-y:auto!important;scrollbar-width:thin!important}
+.ll-home-v752 .ll-home-grid-v754 > .ll-home-card:nth-child(2){overflow-y:auto!important;scrollbar-width:thin!important}
+
+/* V792: link externo do suporte preserva o estilo dos itens. */
+a.ll-support-item-v776{text-decoration:none!important;box-sizing:border-box}

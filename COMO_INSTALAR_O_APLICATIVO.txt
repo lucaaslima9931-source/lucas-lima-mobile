@@ -1,0 +1,9 @@
+LUCAS LIMA — APLICATIVO PWA
+
+1. Para testar localmente, continue abrindo index.html normalmente no Chrome.
+2. Para INSTALAR como PWA com suporte a cache, é necessário publicar os arquivos em HTTPS ou servi-los por localhost. Arquivos abertos por file:/// não habilitam o service worker.
+3. Depois de abrir o endereço HTTPS/localhost no Chrome, use o ícone de instalar na barra de endereços ou o menu do Chrome > Instalar página como app (quando disponível).
+4. O aplicativo instalado abre sem as abas e barra de endereços, aproveitando melhor a altura.
+5. O formulário Cadastro da Loja ajusta seu tamanho conforme a altura da janela, até um limite de legibilidade; em janelas pequenas ainda pode haver rolagem.
+6. IMPORTANTE: esta versão continua sendo um protótipo local. A instalação PWA não cria servidor, não sincroniza dados entre usuários e não transforma o login de demonstração em autenticação segura.
+7. Faça cópias de segurança e não apague a versão anterior sem testar.

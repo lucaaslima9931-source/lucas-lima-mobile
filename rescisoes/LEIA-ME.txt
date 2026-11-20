@@ -1,0 +1,6 @@
+RESCISÕES — ACERTO AVULSO
+Abra o index.html da pasta principal do LUCAS LIMA e selecione ADMINISTRATIVO > RESCISÕES.
+Usa os funcionários e formas de pagamento cadastrados no armazenamento local do navegador.
+Cálculos de dias, férias proporcionais, 1/3, 13º, adicionais e descontos são estimativas configuráveis.
+Pagamentos ficam no histórico local do acerto, mas NÃO são lançados automaticamente no Financeiro central.
+Não é um sistema de folha trabalhista homologado nem possui backend ou autenticação segura.

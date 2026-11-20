@@ -1,0 +1,25 @@
+LUCAS LIMA MOBILE — VERSÃO INDIVIDUAL DE TESTES
+
+OBJETIVO
+Cada iPhone ou Android tem seus próprios dados locais. Não há nuvem, sincronização ou conexão com o computador. Os cadastros começam vazios em um navegador que nunca usou o aplicativo.
+
+IMPORTANTE: ESTE ZIP NÃO É UM .IPA NEM UM .APK.
+Para instalar como aplicativo, é necessário publicar a pasta LUCAS_LIMA_IPHONE em um endereço HTTPS de hospedagem estática. A hospedagem pode ser gratuita (por exemplo, GitHub Pages ou Cloudflare Pages, respeitando as condições do serviço). NÃO publique dados reais, senhas ou arquivos de backup no repositório/hospedagem. Somente os arquivos do programa devem ser publicados.
+
+IPHONE
+1. Abra o endereço HTTPS pelo Safari.
+2. Toque em Compartilhar > Adicionar à Tela de Início.
+3. Abra LUCAS LIMA pelo ícone criado.
+
+ANDROID
+1. Abra o endereço HTTPS no Chrome.
+2. No menu do navegador, toque em Instalar aplicativo ou Adicionar à tela inicial (conforme disponível).
+
+DADOS E SEGURANÇA
+- Os dados são locais ao navegador e NÃO aparecem nos demais aparelhos.
+- Não use o modo anônimo. Evite limpar os dados do site.
+- Use o botão Backup iPhone (disponível também no Android) para exportar o JSON e guardá-lo fora do celular. Restauração sobrescreve os dados locais.
+- O login desta base é demonstrativo e NÃO oferece autenticação robusta. Não use com dados reais ou informações sensíveis antes de revisão de segurança.
+- O sistema original é complexo; vendas, estoque, caixa, financeiro, impressão e uso offline ainda exigem testes funcionais no iPhone e no Android.
+- Recursos de Windows, navegador ou APIs remotas podem não funcionar em aparelhos móveis.
+- O computador e seu PostgreSQL NÃO foram modificados.

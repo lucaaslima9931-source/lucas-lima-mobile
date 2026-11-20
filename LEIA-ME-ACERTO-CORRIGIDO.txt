@@ -1,0 +1,1 @@
+ACERTO DE ESTOQUE: campo de codigo inicia vazio; digitacao localiza produto e preenche descricao/estoque; botao + abre pesquisa; usuario exibido apenas uma vez. Para abrir, execute index.html.

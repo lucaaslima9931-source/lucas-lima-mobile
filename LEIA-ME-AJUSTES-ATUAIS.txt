@@ -1,0 +1,8 @@
+LUCAS LIMA - Ajustes de posicionamento solicitados
+
+Marcas, Categorias, Unidades, Vendedores, Funcionários e Usuários: campo USUÁRIO ao lado de OBSERVAÇÕES.
+Orçamentos: USUÁRIO ao lado de VENDEDOR.
+Trocas: SITUAÇÃO em campo padrão e USUÁRIO ao lado da SITUAÇÃO, no quadro VENDA ORIGINAL.
+Páginas de seleção de módulos: não inserir campo USUÁRIO.
+
+Atenção: mantenha cópia de segurança. Esta versão local não substitui autenticação em servidor.
