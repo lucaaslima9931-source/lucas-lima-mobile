@@ -200,3 +200,48 @@ footer{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;align-
 
 /* V792: link externo do suporte preserva o estilo dos itens. */
 a.ll-support-item-v776{text-decoration:none!important;box-sizing:border-box}
+
+/* V23 — FÉRIAS: todos os painéis visíveis e campos ajustados ao iPhone. */
+@media screen and (max-width:767px){
+ html,body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
+ body{font-size:14px}main{width:100%;max-width:100%;min-width:0;padding:10px 9px 22px}
+ main *{box-sizing:border-box}
+ header{gap:8px;flex-wrap:wrap;font-size:17px;padding:12px 10px}
+ header button{min-height:38px;font-size:12px}
+ section{width:100%;max-width:100%;min-width:0;overflow:visible}
+ h3{font-size:13px;line-height:1.4;white-space:normal;overflow-wrap:anywhere}
+ .columns{display:grid;grid-template-columns:minmax(0,1fr);gap:0;width:100%;min-width:0}
+ .columns>section{width:100%;min-width:0;display:block}
+ .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 9px;padding:4px 10px 14px;width:100%;min-width:0}
+ .fields>label,.columns section>label{min-width:0;max-width:100%;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+ .fields>label.wide{grid-column:1/-1}
+ input,select,textarea{min-width:0;max-width:100%;width:100%;min-height:43px;font-size:16px;padding:9px 8px}
+ .fields .withbtn{height:auto;min-height:43px}
+ .fields .withbtn input{height:43px;min-height:43px;font-size:15px}
+ .fields .withbtn #pick{height:43px;min-height:43px;width:43px;flex-basis:43px}
+ .columns>section:first-child>.fields>label{min-height:0;margin-bottom:0;display:block}
+ .columns>section:first-child>.fields>label>input{height:43px;min-height:43px;margin-top:4px}
+ .columns section>label{display:block;margin:8px 10px 12px}
+ .columns section>label.check{display:flex;align-items:center;gap:8px}
+ .columns section>label.check input{width:20px;min-height:20px;flex:0 0 20px}
+ .periods{grid-template-columns:52px minmax(0,1fr) minmax(0,1fr) 32px;gap:4px;padding:4px 8px 12px}
+ .periods input{font-size:12px;padding:6px 2px;min-height:40px;width:100%}
+ .period-head{font-size:10px;padding:7px 1px;overflow-wrap:anywhere}
+ .periods label,.periods output{font-size:11px;min-width:0}
+ .manual-fields{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important;padding:10px!important;max-width:100%}
+ .manual-fields>*{width:100%!important;min-width:0!important;max-width:100%!important;grid-column:auto!important}
+ .manual-fields button{min-height:44px}
+ .line{flex-wrap:wrap;overflow-wrap:anywhere}
+ .total{gap:8px;flex-wrap:wrap}
+ footer{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;width:100%;min-width:0}
+ footer button,footer #voltar{grid-column:auto!important;min-width:0!important;width:100%!important;min-height:45px!important;padding:9px 5px!important;font-size:12px!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ .pesquisa-filtros{display:grid;grid-template-columns:minmax(0,1fr)!important;gap:10px;padding:0 10px 12px}
+ .pesquisa-filtros label,.pesquisa-filtros label:first-child{grid-column:auto!important;min-width:0;width:100%;font-size:12px}
+ .pesquisa-filtros input,.pesquisa-filtros select,.pesquisa-filtros button{min-height:44px;height:44px;font-size:15px}
+ .filtro-funcionario-com-botao{display:flex!important;gap:7px;min-width:0;width:100%}
+ .filtro-funcionario-com-botao input{min-width:0;flex:1 1 0;width:0}
+ .filtro-funcionario-com-botao button{flex:0 0 44px;width:44px}
+ .pesquisa-tabela-wrap{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+ .pesquisa-tabela{min-width:570px;width:max-content}
+ dialog{max-width:calc(100vw - 18px);max-height:85dvh;overflow:auto}
+}
