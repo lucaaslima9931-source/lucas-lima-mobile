@@ -1,0 +1,41 @@
+/* V25 — Camada visual exclusiva para telefones. Sem alterações em regras de negócio. */
+@media screen and (max-width:767px){
+ html,body{max-width:100%!important;overflow-x:hidden!important;-webkit-text-size-adjust:100%}
+ *,*::before,*::after{box-sizing:border-box}
+ #app{max-width:100%!important;min-width:0!important}
+ #app input,#app select,#app textarea{max-width:100%;font-size:16px}
+ #app input[type=date],#app input[type=datetime-local]{min-width:0}
+ #app button{overflow-wrap:anywhere}
+ /* Janela de impressão DRE: informações e prévia empilhadas em vez de colunas desktop. */
+ #dre-preview{display:block!important;width:100%!important;min-height:340px!important;height:420px!important}
+ #dre-modal-print,#dre-modal-save,#dre-modal-close{min-width:0!important;flex:1 1 0!important;padding:12px 5px!important;font-size:12px!important;white-space:normal!important}
+ body:has(#dre-preview) #dre-preview-title{font-size:14px!important;line-height:1.4!important;overflow-wrap:anywhere!important}
+ body:has(#dre-preview) div:has(> #dre-preview){min-height:350px!important;overflow:auto!important}
+ body:has(#dre-preview) div:has(> #dre-preview-title){min-width:0!important;width:100%!important}
+ body:has(#dre-preview) div:has(> #dre-preview-title) > div{min-width:0!important;width:100%!important}
+ body:has(#dre-preview) div:has(> #dre-preview-title) > div iframe{max-width:100%!important}
+ body:has(#dre-preview) div:has(> #dre-preview-title) > div iframe{overflow:auto!important}
+ body:has(#dre-preview) div:has(> div > #dre-preview-title){display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important;overflow-y:auto!important;overflow-x:hidden!important;align-content:start!important}
+ body:has(#dre-preview) div:has(> div > #dre-preview-title) > div{width:100%!important;min-width:0!important;max-width:100%!important;overflow:visible!important}
+ body:has(#dre-preview) div:has(> div > #dre-preview-title) > div:first-child{font-size:14px!important}
+ body:has(#dre-preview) div:has(> div > #dre-preview-title) > div:first-child h3{font-size:15px!important;line-height:1.4!important}
+ body:has(#dre-preview) div:has(> div > #dre-preview-title) > div:first-child p{margin:10px 0!important;overflow-wrap:anywhere!important}
+ body:has(#dre-preview) div:has(> #dre-modal-print){display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;padding:10px!important;gap:7px!important}
+ body:has(#dre-preview) div:has(> header > #dre-modal-x){width:calc(100vw - 16px)!important;max-width:100%!important;height:calc(100dvh - 20px)!important;max-height:calc(100dvh - 20px)!important;overflow:hidden!important}
+ body:has(#dre-preview) header:has(#dre-modal-x){font-size:15px!important;line-height:1.35!important;padding:12px!important;flex-shrink:0!important}
+ /* Seletor de funcionário — controles em linhas completas, sem sobreposição. */
+ section[role=dialog]:has(#ll-pick-query){width:calc(100vw - 16px)!important;max-width:100%!important;max-height:calc(100dvh - 16px)!important}
+ section[role=dialog]:has(#ll-pick-query)>header{padding:12px!important;gap:8px!important}
+ section[role=dialog]:has(#ll-pick-query)>div{padding:12px!important;overflow-y:auto!important}
+ section[role=dialog]:has(#ll-pick-query) div:has(> label > #ll-pick-type){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:9px!important;align-items:end!important}
+ section[role=dialog]:has(#ll-pick-query) div:has(> label > #ll-pick-type)>label{min-width:0!important;width:100%!important;font-size:12px!important;overflow-wrap:anywhere!important}
+ #ll-pick-type,#ll-pick-query{width:100%!important;min-width:0!important;font-size:16px!important}
+ #ll-pick-search,#ll-pick-new{width:100%!important;min-width:0!important;height:auto!important;min-height:44px!important;font-size:12px!important;padding:8px 5px!important;white-space:normal!important}
+ section[role=dialog]:has(#ll-pick-query) table{min-width:510px!important;width:100%!important}
+ section[role=dialog]:has(#ll-pick-query) footer{flex-wrap:wrap!important;gap:8px!important;font-size:11px!important}
+ section[role=dialog]:has(#ll-pick-query) footer>span{flex:1 1 100%!important}
+ /* Modais administrativos adicionais com cabeçalhos e campos de pesquisa. */
+ [role=dialog],dialog{max-width:calc(100vw - 12px)!important}
+ [role=dialog] input,[role=dialog] select,dialog input,dialog select{min-width:0;max-width:100%}
+ [role=dialog] table,dialog table{font-size:12px}
+}

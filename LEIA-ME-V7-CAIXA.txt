@@ -1,0 +1,1 @@
+V7: ajustes responsivos somente de CSS no Caixa para iPhone. Botões em 2 colunas, filtros em 1 coluna e tabela com rolagem. Sem mudanças nas regras financeiras. Atualize todos os arquivos no GitHub.

@@ -1,2 +1,532 @@
 /* Ajustes complementares para iPhone e Android. */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:0;overflow-x:hidden}input,select,textarea{max-width:100%;box-sizing:border-box}button,a{-webkit-tap-highlight-color:transparent}input,select,textarea{font-size:max(16px,1em)}@media(max-width:767px){#app{max-width:100vw;min-width:0}table{max-width:100%} .vt-pay-grid-438,.vt-trade-grid-438{grid-template-columns:repeat(2,minmax(0,1fr))!important}.vt-pay-grid-438 #vt-addpay{grid-column:1/-1;grid-row:auto}.vt-total-layout{justify-content:stretch}.vt-total-edit{width:100%} .vt-field{min-width:0}}@supports(padding:max(0px)){body{padding-bottom:env(safe-area-inset-bottom)}}
+
+/* V3 — Layout do INÍCIO igual aos demais módulos no celular.
+   Somente apresentação; não altera navegação, cadastros nem dados. */
+@media screen and (max-width: 767px) {
+  html,body,#app{width:100%;max-width:100%;overflow-x:hidden!important}
+  #app>.topbar,.topbar{display:grid!important;grid-template-columns:minmax(0,1fr)!important;height:auto!important;min-height:0!important;gap:8px!important;padding:10px 12px!important;align-items:center!important}
+  .topbar .brand{min-width:0!important;max-width:100%!important;display:flex!important;align-items:center!important;gap:9px!important}
+  .topbar .ll-system-mark{width:42px!important;height:42px!important;max-width:42px!important;flex:0 0 42px!important;object-fit:contain!important}
+  .topbar .brand-name{font-size:19px!important;line-height:1.1!important}
+  .topbar .brand-subtitle{font-size:8px!important;line-height:1.2!important}
+  .topbar .store-info{min-width:0!important;width:100%!important;max-width:100%!important;flex:0 1 auto!important;gap:8px!important}
+  .topbar .store-info>div{min-width:0!important}
+  .topbar .store-icon{flex:0 0 25px!important;width:25px!important;height:25px!important}
+  .topbar .store-name{font-size:12px!important;white-space:normal!important;overflow-wrap:anywhere!important}
+  .topbar .store-company{font-size:10px!important;white-space:normal!important}
+  .topbar .top-actions{width:100%!important;max-width:100%!important;min-width:0!important;display:flex!important;flex-wrap:wrap!important;gap:7px!important;align-items:center!important;justify-content:flex-start!important}
+  .topbar .ll-header-user-box{min-width:0!important;max-width:48%!important}
+  .topbar .top-user,.topbar .top-user strong{font-size:10px!important;overflow-wrap:anywhere!important}
+  .topbar .top-date{font-size:10px!important;line-height:1.25!important;white-space:normal!important;max-width:45%!important}
+  .topbar .ll-list-wrap{min-width:0!important;max-width:100%!important}
+  .topbar .ll-list-button{max-width:100%!important;white-space:nowrap!important;font-size:11px!important;padding:7px 9px!important}
+  .topbar .top-icon{width:30px!important;height:30px!important;flex:0 0 30px!important}
+  #app>.app-layout,#app>.app-layout:has(.ll-home-v752){display:block!important;min-height:0!important;height:auto!important;background:#f2f6fd!important}
+  #app>.app-layout>.sidebar,#app>.app-layout:has(.ll-home-v752)>.sidebar{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:5px!important;width:100%!important;max-width:100vw!important;height:auto!important;min-height:0!important;max-height:none!important;overflow-x:auto!important;overflow-y:hidden!important;padding:8px!important;scrollbar-width:thin!important;position:relative!important}
+  #app>.app-layout>.sidebar>.menu-button{flex:0 0 auto!important;width:auto!important;min-width:110px!important;max-width:145px!important;min-height:44px!important;height:44px!important;padding:8px 10px!important;margin:0!important;font-size:11px!important;gap:6px!important;border-radius:8px!important;transform:none!important}
+  #app>.app-layout>.sidebar>.menu-button .menu-icon{width:20px!important;height:20px!important;flex:0 0 20px!important}
+  #app>.app-layout>.sidebar>.menu-button .menu-label{white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  #app>.app-layout>.workspace,#app>.app-layout:has(.ll-home-v752)>.workspace,#app>.app-layout>.workspace:has(>.ll-home-v752){background:#f2f6fd!important;min-width:0!important;width:100%!important;padding:12px!important;margin:0!important}
+  #app>.app-layout>.workspace>.ll-home.ll-home-v752{width:100%!important;max-width:100%!important;padding:0!important;margin:0!important;background:transparent!important}
+  #app .ll-home-v752 .ll-home-grid-v754{display:flex!important;flex-direction:column!important;gap:12px!important;width:100%!important;max-width:100%!important;margin:0!important;padding:0!important;align-items:stretch!important}
+  #app .ll-home-v752 .ll-home-grid-v754>.ll-home-logo-panel{order:-1!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:125px!important;height:auto!important;max-height:none!important;padding:16px!important;margin:0!important;border:1px solid #dbe5f2!important;border-radius:15px!important;background:#fff!important;box-shadow:0 3px 12px #123e7010!important}
+  #app .ll-home-v752 .ll-home-grid-v754>.ll-home-logo-panel .ll-company-logo{width:auto!important;height:auto!important;max-width:100%!important;max-height:160px!important;transform:none!important;object-fit:contain!important}
+  #app .ll-home-v752 .ll-home-grid-v754>.ll-home-logo-panel .ll-home-placeholder{font-size:clamp(18px,5vw,27px)!important;text-align:center!important;max-width:100%!important;overflow-wrap:anywhere!important}
+  #app .ll-home-v752 .ll-home-grid-v754>.ll-home-card{width:100%!important;max-width:100%!important;height:auto!important;min-height:150px!important;max-height:none!important;overflow:visible!important;border:1px solid #dbe5f2!important;border-radius:13px!important;box-shadow:0 3px 12px #123e7010!important}
+  #app .ll-home-v752 .ll-home-grid-v754 .ll-home-notice-body{min-height:100px!important;overflow:visible!important;display:block!important;flex:auto!important}
+  #app .ll-home-v752 .ll-home-grid-v754>.ll-home-card:nth-child(2),#app .ll-home-v752 .ll-home-grid-v754>.ll-home-card:nth-child(5){overflow:visible!important}
+  #app .ll-home-v752 .ll-home-grid-v754 .ll-home-empty{white-space:normal!important;overflow-wrap:anywhere!important;text-align:center!important;font-size:12px!important;padding:15px 8px!important}
+  #app .ll-home-v752 .ll-support-v776{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:100%!important;height:auto!important;grid-template-columns:1fr!important;gap:0!important;margin:0!important;padding:10px!important;border-radius:12px!important}
+  #app .ll-home-v752 .ll-support-item-v776{min-height:65px!important;padding:10px!important}
+}
+
+/* V4 — Cadastro de Fornecedores: formulário responsivo sem campos sobrepostos. */
+@media screen and (max-width: 767px) {
+  #forn-main,#forn-form,#forn-search-panel{box-sizing:border-box!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important}
+  #forn-main{padding:0!important}
+  #forn-head{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:10px!important;height:auto!important;min-height:0!important;padding:12px!important}
+  #forn-head>span{flex:1 1 175px!important;min-width:0!important;font-size:clamp(14px,4vw,18px)!important;white-space:normal!important;overflow-wrap:anywhere!important}
+  #forn-form{padding:12px!important}
+  #forn-fields{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px 10px!important;align-items:start!important}
+  #forn-fields>label{grid-column:auto!important;min-width:0!important;max-width:100%!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:6px!important;font-size:12px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important}
+  #forn-fields>label:has(#forn-nome),#forn-fields>label:has(#forn-fantasia),#forn-fields>label:has(#forn-rg),#forn-fields>label:has(#forn-email),#forn-fields>label:has(#forn-contato),#forn-fields>label:has(#forn-rua),#forn-fields>label:has(#forn-complemento),#forn-fields>label:has(#forn-observacoes){grid-column:1/-1!important}
+  #forn-fields input,#forn-fields select{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;height:42px!important;min-height:42px!important;padding:8px!important;font-size:16px!important;box-sizing:border-box!important}
+  #forn-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;padding:12px!important}
+  #forn-actions .action-button{width:100%!important;min-width:0!important;min-height:45px!important;height:auto!important;padding:10px 7px!important;font-size:12px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important}
+  #forn-actions .action-button:nth-child(4){grid-column:1/-1!important}
+  #forn-actions .action-button:nth-child(5){grid-column:1/-1!important}
+  #forn-search-panel{padding:12px!important}
+  #forn-search-tools{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:10px!important;align-items:end!important}
+  #forn-search-tools>input{grid-column:1/-1!important;min-width:0!important;width:100%!important;height:44px!important;font-size:16px!important}
+  #forn-search-tools>label{min-width:0!important;max-width:100%!important;display:flex!important;flex-direction:column!important;gap:5px!important;font-size:12px!important;overflow-wrap:anywhere!important}
+  #forn-search-tools select,#forn-search-button{width:100%!important;min-width:0!important;height:44px!important;font-size:14px!important}
+  #forn-search-panel table{min-width:640px!important;width:100%!important}
+}
+@media screen and (max-width: 360px) {
+  #forn-fields{grid-template-columns:minmax(0,1fr)!important}
+  #forn-fields>label{grid-column:1/-1!important}
+}
+
+/* V5 — VENDAS: campos, pagamentos e ações dentro da largura do iPhone.
+   Escopo estritamente visual; sem alterações na lógica de vendas. */
+@media screen and (max-width:767px){
+  .vt-page:has(#vt-num),.vt-page:has(#vt-num)>.vt-panel{box-sizing:border-box!important;width:100%!important;max-width:100%!important;min-width:0!important}
+  .vt-page:has(#vt-num){padding:9px!important;overflow-x:clip!important}
+  .vt-page:has(#vt-num)>.vt-panel{padding:10px!important;overflow:visible!important}
+  .vt-page:has(#vt-num) .vt-grid,.vt-page:has(#vt-num) .vt-field,.vt-page:has(#vt-num) .vt-picker,.vt-page:has(#vt-num) .vt-payment-columns,.vt-page:has(#vt-num) .vt-payment-summary,.vt-page:has(#vt-num) .vt-payment-entries{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+  .vt-page:has(#vt-num)>.vt-panel:has(#vt-num)>.vt-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px 9px!important;align-items:start!important}
+  .vt-page:has(#vt-num) .vt-field{width:100%!important;min-width:0!important;white-space:normal!important;overflow-wrap:anywhere!important;line-height:1.35!important;gap:6px!important}
+  .vt-page:has(#vt-num) .vt-field input,.vt-page:has(#vt-num) .vt-field select,.vt-page:has(#vt-num) .vt-field textarea{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;font-size:16px!important;min-height:42px!important;height:auto!important;text-overflow:ellipsis!important}
+  .vt-page:has(#vt-num) .vt-picker{width:100%!important;display:flex!important;align-items:stretch!important;gap:6px!important}
+  .vt-page:has(#vt-num) .vt-picker select{flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important}
+  .vt-page:has(#vt-num) .vt-picker button{flex:0 0 38px!important;min-width:38px!important;height:42px!important}
+  .vt-page:has(#vt-num)>.vt-panel:has(#vt-code)>.vt-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:11px!important}
+  .vt-page:has(#vt-num)>.vt-panel:has(#vt-code)>.vt-grid>*{min-width:0!important;max-width:100%!important}
+  .vt-page:has(#vt-num)>.vt-panel:has(#vt-code)>.vt-grid>#vt-add{grid-column:1!important;width:100%!important;white-space:normal!important}
+  .vt-page:has(#vt-num)>.vt-panel:has(#vt-code)>.vt-stock{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;width:100%!important;max-width:100%!important}
+  .vt-page:has(#vt-num)>.vt-panel:has(#vt-code)>.vt-stock>.vt-stock-box{min-width:0!important;width:100%!important;box-sizing:border-box!important}
+  .vt-page:has(#vt-num) .vt-pay-grid-438,.vt-page:has(#vt-num) .vt-trade-grid-438{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;align-items:end!important}
+  .vt-page:has(#vt-num) .vt-pay-grid-438>*{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+  .vt-page:has(#vt-num) .vt-pay-grid-438 #vt-addpay{grid-column:1/-1!important;width:100%!important;min-height:42px!important;white-space:normal!important}
+  .vt-page:has(#vt-num) .vt-payment-columns{grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+  .vt-page:has(#vt-num) .vt-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+  .vt-page:has(#vt-num) .vt-actions button{width:100%!important;min-width:0!important;max-width:100%!important;min-height:42px!important;height:auto!important;white-space:normal!important;overflow-wrap:anywhere!important;line-height:1.3!important}
+  .vt-page:has(#vt-num) .vt-scroll{max-width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+  .vt-page:has(#vt-num) .vt-table{width:max-content!important;min-width:100%!important}
+  #ll-iphone-backup,#iphone-backup-btn,.ll-iphone-backup{max-width:calc(100vw - 24px)!important}
+}
+@media screen and (max-width:390px){
+ .vt-page:has(#vt-num)>.vt-panel:has(#vt-num)>.vt-grid{grid-template-columns:minmax(0,1fr)!important}
+ .vt-page:has(#vt-num) .vt-pay-grid-438{grid-template-columns:minmax(0,1fr)!important}
+}
+
+/* V6 — Ajustes responsivos Vendas, Orcamentos e Trocas (apenas visual). */
+@media screen and (max-width: 767px) {
+  #app .or-page, #app .vt-page { width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;overflow-x:clip!important; }
+  #app .or-page *, #app .vt-page * { box-sizing:border-box; }
+  #app .or-panel, #app .vt-panel {min-width:0!important;max-width:100%!important;overflow:visible!important;}
+  #app .or-grid, #app .or-vendas-modelo .or-grid,
+  #app .or-vendas-modelo .or-filter,
+  #app .vt-page .vt-consulta-filtros,
+  #app .vt-page .vt-grid,
+  #app .vt-page .vt-pay-grid-438,
+  #app .vt-page .vt-trade-grid-438,
+  #app .vt-trocas-modelo .tr-original-grid {
+    display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+    gap:12px!important;align-items:stretch!important;
+  }
+  #app .or-grid > *, #app .or-filter > *, #app .vt-grid > *,
+  #app .vt-consulta-filtros > *, #app .vt-pay-grid-438 > *,
+  #app .vt-trade-grid-438 > *, #app .tr-original-grid > * {
+    grid-column:auto!important;grid-row:auto!important;
+    min-width:0!important;max-width:100%!important;width:100%!important;
+    margin-left:0!important;margin-right:0!important;
+  }
+  #app .or-field, #app .vt-field {display:flex!important;flex-direction:column!important;min-width:0!important;max-width:100%!important;width:100%!important;gap:6px!important;overflow-wrap:anywhere!important;white-space:normal!important;}
+  #app .or-field input, #app .or-field select, #app .or-field textarea,
+  #app .vt-field input, #app .vt-field select, #app .vt-field textarea,
+  #app .or-filter input, #app .vt-consulta-filtros input,
+  #app .or-filter select, #app .vt-consulta-filtros select {
+    display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;
+    min-height:42px!important;height:auto!important;margin:0!important;
+    font-size:16px!important;overflow:hidden!important;text-overflow:ellipsis!important;
+  }
+  #app .or-page .or-picker, #app .vt-page .vt-picker,
+  #app .or-consult-client, #app .vt-page .tr-sale-picker {
+    display:flex!important;flex-direction:row!important;align-items:stretch!important;gap:7px!important;
+    width:100%!important;min-width:0!important;max-width:100%!important;
+  }
+  #app .or-page .or-picker > :first-child, #app .vt-page .vt-picker > :first-child,
+  #app .or-consult-client > :first-child, #app .vt-page .tr-sale-picker > :first-child {
+    flex:1 1 0!important;width:0!important;min-width:0!important;
+  }
+  #app .or-page .or-picker button, #app .vt-page .vt-picker button,
+  #app .or-consult-client button, #app .vt-page .tr-sale-picker button {
+    flex:0 0 42px!important;min-width:42px!important;max-width:42px!important;
+  }
+  #app .or-actions, #app .vt-actions, #app .vt-trocas-modelo > .vt-actions {
+    display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;align-items:stretch!important;
+  }
+  #app .or-actions button, #app .vt-actions button, #app .vt-trocas-modelo > .vt-actions button {
+    min-width:0!important;max-width:100%!important;width:100%!important;
+    height:auto!important;min-height:44px!important;padding:10px 5px!important;
+    white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important;
+    line-height:1.25!important;font-size:12px!important;
+  }
+  #app .vt-page #vt-addpay, #app .vt-page #tr-addpay,
+  #app .or-page #or-search, #app .vt-page #vt-filter-search {
+    width:100%!important;min-width:0!important;max-width:100%!important;
+    grid-column:1/-1!important;min-height:44px!important;
+  }
+  #app .or-page .or-scroll, #app .vt-page .vt-scroll,
+  #app .or-page .or-table-wrap, #app .vt-page .vt-table-wrap {
+    width:100%!important;max-width:100%!important;overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  #app .or-page table, #app .vt-page table {min-width:500px;}
+  #app .vt-page .vt-stock {width:100%!important;max-width:100%!important;min-width:0!important;}
+  #app .vt-page .vt-stock > * {min-width:0!important;}
+}
+
+/* V7 — Caixa no iPhone: ajustes somente visuais, sem alterar lancamentos. */
+@media screen and (max-width:767px){
+  #app .cx-module.cx-dashboard{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;padding:10px!important;overflow-x:clip!important}
+  #app .cx-dashboard *,#app .cx-dashboard *::before,#app .cx-dashboard *::after{box-sizing:border-box}
+  #app .cx-dashboard .cx-dash-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;align-items:stretch!important;padding:12px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+  #app .cx-dashboard .cx-dash-actions>.cx-action{width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;min-height:48px!important;margin:0!important;padding:10px 6px!important;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important;font-size:13px!important;line-height:1.3!important;text-align:center!important}
+  #app .cx-dashboard .cx-history{width:100%!important;min-width:0!important;max-width:100%!important;overflow:hidden!important}
+  #app .cx-dashboard .cx-history-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;width:100%!important;min-width:0!important;align-items:stretch!important}
+  #app .cx-dashboard .cx-history-filters>*{grid-column:auto!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important}
+  #app .cx-dashboard .cx-history-field{display:flex!important;flex-direction:column!important;gap:7px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+  #app .cx-dashboard .cx-history-field input,#app .cx-dashboard .cx-history-field select{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;height:44px!important;min-height:44px!important;margin:0!important;font-size:16px!important}
+  #app .cx-dashboard .cx-history-operator{display:flex!important;flex-direction:row!important;align-items:stretch!important;gap:8px!important;width:100%!important;min-width:0!important}
+  #app .cx-dashboard .cx-history-operator>input,#app .cx-dashboard .cx-history-operator>select{flex:1 1 0!important;width:0!important;min-width:0!important}
+  #app .cx-dashboard .cx-history-operator .cx-history-plus{flex:0 0 44px!important;width:44px!important;min-width:44px!important;max-width:44px!important;height:44px!important;min-height:44px!important}
+  #app .cx-dashboard .cx-history-search{width:100%!important;max-width:100%!important;min-width:0!important;min-height:44px!important;height:auto!important;grid-column:auto!important;white-space:normal!important}
+  #app .cx-dashboard .cx-history-table{min-width:560px!important;width:max-content!important}
+  #app .cx-dashboard .cx-history:has(.cx-history-table){overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+}
+
+/* V8 — Ficha de estoque: pesquisa de movimentacoes compacta no iPhone. */
+@media screen and (max-width:767px){
+ #app .fs-page,#app .fs-page *{box-sizing:border-box}
+ #app .fs-page{width:100%!important;min-width:0!important;max-width:100%!important;overflow-x:clip!important}
+ #app .fs-page .fs-controls{height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important}
+ #app .fs-page .fs-control-row{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto!important;align-items:stretch!important;justify-content:stretch!important;align-content:start!important;gap:12px!important;height:auto!important;min-height:0!important;max-height:none!important;padding:0!important;margin:0!important}
+ #app .fs-page .fs-control-row>.fs-period{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;flex:none!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;margin:0!important}
+ #app .fs-page .fs-control-row>.fs-period>label,#app .fs-page .fs-control-row>label{display:flex!important;flex-direction:column!important;gap:6px!important;flex:none!important;grid-column:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;margin:0!important;white-space:normal!important}
+ #app .fs-page .fs-control-row input,#app .fs-page .fs-control-row select{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;height:44px!important;min-height:44px!important;margin:0!important;padding:8px 10px!important;font-size:16px!important}
+ #app .fs-page .fs-control-row>.fs-buttons{display:block!important;flex:none!important;position:static!important;grid-column:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important}
+ #app .fs-page .fs-control-row>.fs-buttons button{display:block!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:44px!important;height:auto!important;margin:0!important;white-space:normal!important}
+ #app .fs-page .fs-scroll{width:100%!important;max-width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+ #app .fs-page .fs-table{min-width:680px!important}
+ #app .fs-page .fs-footer button{max-width:100%!important}
+}
+
+/* V9 — Acerto de Estoque: layout mobile, sem alterar regras ou eventos. */
+@media screen and (max-width:767px){
+ #app .ae-adjust-page, #app .ae-adjust-page *{box-sizing:border-box}
+ #app .ae-adjust-page{display:flex!important;flex-direction:column!important;gap:10px!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:clip!important;padding:8px!important}
+ #app .ae-adjust-page>.av-topbar,#app .ae-adjust-page>.ae-card,#app .ae-adjust-page>.av-stock-panel{display:block!important;position:static!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important}
+ #app .ae-adjust-page .ae-grid,#app .ae-adjust-page .ae-prod-grid,#app .ae-adjust-page #ae-pesquisa .av-search-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-template-rows:auto!important;align-items:stretch!important;align-content:start!important;gap:12px!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important}
+ #app .ae-adjust-page .ae-grid>label,#app .ae-adjust-page .ae-prod-grid>label,#app .ae-adjust-page #ae-pesquisa .av-search-grid>label{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:6px!important;grid-column:auto!important;grid-row:auto!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .ae-adjust-page .ae-grid input,#app .ae-adjust-page .ae-prod-grid input,#app .ae-adjust-page #ae-pesquisa input,#app .ae-adjust-page #ae-pesquisa select{display:block!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:44px!important;min-height:44px!important;margin:0!important;padding:8px 10px!important;font-size:16px!important;text-overflow:ellipsis!important}
+ #app .ae-adjust-page .ae-desc-line{display:flex!important;align-items:stretch!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .ae-adjust-page .ae-desc-line input{flex:1 1 0!important;width:0!important;min-width:0!important}
+ #app .ae-adjust-page .ae-desc-line button{flex:0 0 44px!important;width:44px!important;min-width:44px!important;max-width:44px!important;height:44px!important;min-height:44px!important}
+ #app .ae-adjust-page #ae-add,#app .ae-adjust-page #ae-search-button{display:block!important;grid-column:1/-1!important;grid-row:auto!important;position:static!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:44px!important;height:auto!important;margin:0!important;white-space:normal!important;font-size:14px!important}
+ #app .ae-adjust-page .ae-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .ae-adjust-page .ae-actions button{width:100%!important;max-width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;padding:10px 5px!important;margin:0!important;font-size:13px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .ae-adjust-page .ae-actions button[data-ae="voltar"]{background:#d83a4d!important}
+ #app .ae-adjust-page .ae-scroll{display:block!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch!important}
+ #app .ae-adjust-page .ae-table{min-width:650px!important;width:max-content!important}
+ #app .ae-adjust-page .av-stock-boxes{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;max-width:100%!important}
+ #app .ae-adjust-page .av-stock-boxes>div{min-width:0!important;overflow-wrap:anywhere!important}
+}
+
+/* V10 — Avariados: responsividade isolada, sem alterar regras ou eventos. */
+@media screen and (max-width:767px){
+ #app .av-page, #app .av-page *{box-sizing:border-box}
+ #app .av-page{display:flex!important;flex-direction:column!important;gap:10px!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:clip!important;padding:8px!important}
+ #app .av-page>.av-topbar,#app .av-page>.ae-card,#app .av-page>.av-stock-panel{display:block!important;position:static!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important}
+ #app .av-page .ae-grid,#app .av-page .ae-prod-grid,#app .av-page #av-pesquisa .av-search-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-template-rows:auto!important;align-items:stretch!important;align-content:start!important;gap:12px!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important}
+ #app .av-page .ae-grid>label,#app .av-page .ae-prod-grid>label,#app .av-page #av-pesquisa .av-search-grid>label{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:6px!important;grid-column:auto!important;grid-row:auto!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .av-page .ae-grid input,#app .av-page .ae-prod-grid input,#app .av-page #av-pesquisa input,#app .av-page #av-pesquisa select{display:block!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:44px!important;min-height:44px!important;margin:0!important;padding:8px 10px!important;font-size:16px!important;text-overflow:ellipsis!important}
+ #app .av-page .ae-desc-line{display:flex!important;align-items:stretch!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .av-page .ae-desc-line input{flex:1 1 0!important;width:0!important;min-width:0!important}
+ #app .av-page .ae-desc-line button{flex:0 0 44px!important;width:44px!important;min-width:44px!important;max-width:44px!important;height:44px!important;min-height:44px!important}
+ #app .av-page #av-adicionar,#app .av-page #av-buscar{display:block!important;grid-column:1/-1!important;grid-row:auto!important;position:static!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:44px!important;height:auto!important;margin:0!important;white-space:normal!important;font-size:14px!important}
+ #app .av-page .ae-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .av-page .ae-actions button{width:100%!important;max-width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;padding:10px 5px!important;margin:0!important;font-size:13px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .av-page .ae-actions button[data-ae="voltar"]{background:#d83a4d!important}
+ #app .av-page .ae-scroll{display:block!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch!important}
+ #app .av-page .ae-table{min-width:650px!important;width:max-content!important}
+ #app .av-page .av-stock-boxes{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;max-width:100%!important}
+ #app .av-page .av-stock-boxes>div{min-width:0!important;overflow-wrap:anywhere!important}
+}
+
+@media screen and (max-width:767px){
+ #app .av-page .ae-grid label:has(#av-obs){grid-column:1/-1!important}
+ #app .av-page .ae-grid input[type="date"],#app .av-page #av-pesquisa input[type="date"]{font-size:16px!important;text-align:left!important;max-width:100%!important;min-width:0!important;overflow:hidden!important}
+ #app .av-page .ae-prod-grid>button#av-adicionar{align-self:stretch!important}
+ #app .av-page .ae-actions{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #app .av-page .ae-actions button{font-size:14px!important;overflow:visible!important;text-overflow:clip!important}
+ #app .av-page .ae-scroll{overflow-x:auto!important;max-width:100%!important}
+ #app .av-page .av-search-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;height:auto!important;min-height:0!important}
+ #app .av-page .av-search-grid>*{grid-column:auto!important;grid-row:auto!important;position:static!important;min-width:0!important;width:100%!important;max-width:100%!important}
+ #app .av-page .av-search-grid label{display:flex!important;flex-direction:column!important;gap:6px!important}
+ #app .av-page .av-search-grid input,#app .av-page .av-search-grid select{width:100%!important;min-width:0!important;max-width:100%!important;height:44px!important;margin:0!important}
+ #app .av-page .av-stock-boxes{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+
+/* V11 — Estoque mínimo no iPhone: somente apresentação, sem mudar consultas. */
+@media screen and (max-width:767px){
+ #app .em-page,#app .em-page *{box-sizing:border-box}
+ #app .em-page{display:flex!important;flex-direction:column!important;gap:12px!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:clip!important;padding:10px!important}
+ #app .em-page>.em-heading,#app .em-page>.em-cards,#app .em-page>.em-panel,#app .em-page>.em-bottom-actions{width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important}
+ #app .em-page .em-heading{min-height:52px!important;padding:12px!important}
+ #app .em-page .em-heading h1{font-size:18px!important;line-height:1.3!important;white-space:normal!important}
+ #app .em-page .em-cards{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+ #app .em-page .em-stat{min-width:0!important;min-height:90px!important;padding:12px!important}
+ #app .em-page .em-stat span{font-size:12px!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .em-page .em-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:auto!important;gap:13px!important;padding:12px 5px!important;align-items:stretch!important}
+ #app .em-page .em-filters>label{display:flex!important;flex-direction:column!important;gap:7px!important;min-width:0!important;width:100%!important;max-width:100%!important;font-size:13px!important}
+ #app .em-page .em-filters select,#app .em-page .em-filters input{min-width:0!important;max-width:100%!important;width:100%!important;min-height:44px!important;height:44px!important;font-size:16px!important;padding:8px 10px!important}
+ #app .em-page .em-select-line{display:flex!important;gap:8px!important;width:100%!important;max-width:100%!important;min-width:0!important}
+ #app .em-page .em-select-line select{flex:1 1 0!important;width:0!important;min-width:0!important}
+ #app .em-page .em-select-plus{flex:0 0 44px!important;width:44px!important;min-width:44px!important;height:44px!important;font-size:22px!important}
+ #app .em-page #em-go{grid-column:1/-1!important;position:static!important;display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;margin:0!important;font-size:15px!important;background:#1764bd!important;color:white!important;border:0!important}
+ #app .em-page .em-filter-footer{padding:2px 5px 12px!important;display:block!important}
+ #app .em-page .em-check{display:flex!important;align-items:center!important;gap:9px!important;font-size:13px!important;line-height:1.4!important;white-space:normal!important}
+ #app .em-page .em-check input{width:20px!important;height:20px!important;flex:0 0 20px!important}
+ #app .em-page .em-panel{min-width:0!important;overflow:hidden!important;padding:8px!important}
+ #app .em-page .em-panel h2{font-size:13px!important;line-height:1.4!important;overflow-wrap:anywhere!important}
+ #app .em-page .em-table-wrap{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-x pan-y!important}
+ #app .em-page .em-table{width:max-content!important;min-width:950px!important;table-layout:auto!important;white-space:nowrap!important}
+ #app .em-page .em-table th,#app .em-page .em-table td{font-size:12px!important;padding:11px 9px!important;white-space:nowrap!important}
+ #app .em-page .em-empty{white-space:normal!important;text-align:left!important;min-width:240px!important;padding:22px 12px!important}
+ #app .em-page .em-bottom-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ #app .em-page .em-bottom-actions #em-print,#app .em-page .em-bottom-actions #em-back{grid-column:auto!important;width:100%!important;min-width:0!important;min-height:46px!important;font-size:14px!important;white-space:normal!important}
+}
+
+/* V12 — Saídas de Estoque: layout iPhone, exclusivamente CSS. */
+@media screen and (max-width:767px){
+ #app .alm:has(.se-title),#app .alm:has(.se-title) *{box-sizing:border-box}
+ #app .alm:has(.se-title){display:flex!important;flex-direction:column!important;gap:12px!important;width:100%!important;max-width:100%!important;min-width:0!important;padding:8px!important;overflow-x:clip!important}
+ #app .alm:has(.se-title)>.alm-head{display:none!important}
+ #app .alm:has(.se-title)>.se-title,#app .alm:has(.se-title)>.alm-card,#app .alm:has(.se-title)>.alm-columns{position:static!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;grid-column:auto!important;grid-row:auto!important}
+ #app .alm:has(.se-title)>.se-title{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;padding:12px!important;font-size:15px!important;white-space:normal!important}
+ #app .alm:has(.se-title) #se-shortcuts{flex:0 0 auto!important;white-space:normal!important;font-size:12px!important}
+ #app .alm:has(.se-title) .alm-fields{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;height:auto!important;align-items:stretch!important}
+ #app .alm:has(.se-title) .alm-fields>label,#app .alm:has(.se-title) .se-type-row>label,#app .alm:has(.se-title) .se-entry>label,#app .alm:has(.se-title) .se-search-fields>label{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:6px!important;position:static!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;margin:0!important;font-size:13px!important;line-height:1.35!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .alm:has(.se-title) .alm-fields input,#app .alm:has(.se-title) .se-type-row select,#app .alm:has(.se-title) .se-entry input,#app .alm:has(.se-title) .se-search-fields input,#app .alm:has(.se-title) .se-search-fields select{display:block!important;position:static!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:44px!important;height:44px!important;margin:0!important;padding:8px 10px!important;font-size:16px!important;line-height:normal!important;text-overflow:ellipsis!important}
+ #app .alm:has(.se-title) input[type=date]{text-align:left!important;overflow:hidden!important}
+ #app .alm:has(.se-title) .se-type-row,#app .alm:has(.se-title) .se-observation{display:block!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:10px 0!important}
+ #app .alm:has(.se-title) .se-observation textarea{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:7px 0 0!important;min-height:68px!important;font-size:16px!important}
+ #app .alm:has(.se-title) .alm-columns{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ #app .alm:has(.se-title) .alm-columns>.alm-card{width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important}
+ #app .alm:has(.se-title) .se-entry{display:grid!important;grid-template-columns:minmax(0,1fr) 48px!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px 8px!important;align-items:end!important;align-content:start!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0 0 12px!important}
+ #app .alm:has(.se-title) .se-entry>label{grid-column:1/-1!important}
+ #app .alm:has(.se-title) .se-entry>label:has(#al-desc){grid-column:1!important;grid-row:auto!important}
+ #app .alm:has(.se-title) .se-entry>#al-pick{grid-column:2!important;grid-row:auto!important;position:static!important;display:block!important;width:48px!important;min-width:48px!important;max-width:48px!important;height:44px!important;min-height:44px!important;padding:6px!important;margin:0!important;font-size:22px!important}
+ #app .alm:has(.se-title) .se-entry>#al-add{grid-column:1/-1!important;grid-row:auto!important;position:static!important;display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;margin:0!important;padding:10px!important;font-size:15px!important;white-space:normal!important}
+ #app .alm:has(.se-title) .alm-scroll{display:block!important;max-width:100%!important;width:100%!important;min-width:0!important;overflow-x:auto!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important}
+ #app .alm:has(.se-title) .alm-scroll table{width:max-content!important;min-width:680px!important;table-layout:auto!important}
+ #app .alm:has(.se-title) .alm-scroll th,#app .alm:has(.se-title) .alm-scroll td{font-size:12px!important;padding:10px 8px!important;white-space:nowrap!important}
+ #app .alm:has(.se-title) #al-total{display:block!important;text-align:left!important;white-space:normal!important;overflow-wrap:anywhere!important;line-height:1.5!important;margin-top:10px!important}
+ #app .alm:has(.se-title) .se-stock-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;width:100%!important}
+ #app .alm:has(.se-title) .se-stock-grid>div{min-width:0!important;overflow-wrap:anywhere!important;padding:12px 4px!important;font-size:11px!important}
+ #app .alm:has(.se-title) .se-actions .alm-buttons{position:static!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;width:100%!important;min-width:0!important;padding:0!important}
+ #app .alm:has(.se-title) .se-actions .alm-buttons>button{display:block!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;margin:0!important;padding:10px 5px!important;font-size:13px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .alm:has(.se-title) #al-search-section .se-search-fields{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;align-items:stretch!important;align-content:start!important;gap:12px!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0 0 12px!important}
+ #app .alm:has(.se-title) #al-search-section #al-search-btn{grid-column:1/-1!important;grid-row:auto!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;margin:0!important;font-size:15px!important}
+}
+
+/* V13 — Pedidos de Compra: organização para celulares, sem alterar lógica. */
+@media (max-width: 680px) {
+  #app .pc-page, .pc-page {box-sizing:border-box!important;width:100%!important;max-width:100%!important;min-width:0!important;padding:10px 8px 24px!important;overflow-x:clip!important}
+  #app .pc-page *, .pc-page * {box-sizing:border-box}
+  #app .pc-page .pc-card {min-width:0!important;max-width:100%!important;width:100%!important;overflow:visible!important}
+  #app .pc-page .pc-head, #app .pc-page .pc-add, #app .pc-page .pc-filters {display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:auto!important;align-items:stretch!important;gap:12px!important;height:auto!important;min-height:0!important}
+  #app .pc-page .pc-cols {display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;width:100%!important;min-width:0!important}
+  #app .pc-page .pc-field {display:flex!important;flex-direction:column!important;gap:6px!important;min-width:0!important;max-width:100%!important;width:100%!important;margin:0!important;font-size:13px!important;line-height:1.4!important;white-space:normal!important;overflow-wrap:anywhere!important}
+  #app .pc-page .pc-field>span {display:block!important;line-height:1.35!important;white-space:normal!important}
+  #app .pc-page .pc-field input, #app .pc-page .pc-field select {display:block!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px 11px!important;font-size:16px!important;line-height:normal!important;text-overflow:ellipsis!important}
+  #app .pc-page .pc-field input[type=date] {overflow:hidden!important;text-align:left!important}
+  #app .pc-page .pc-picker {display:flex!important;align-items:center!important;gap:8px!important;min-width:0!important;max-width:100%!important;width:100%!important}
+  #app .pc-page .pc-picker>input:not([type=hidden]), #app .pc-page .pc-picker>select {flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important}
+  #app .pc-page .pc-plus {position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;min-width:46px!important;max-width:46px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0!important;font-size:23px!important}
+  #app .pc-page .pc-add>.pc-btn, #app .pc-page .pc-filters>.pc-btn {display:block!important;grid-column:1/-1!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;padding:11px!important;font-size:15px!important;white-space:normal!important}
+  #app .pc-page .pc-actions .pc-buttons {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;min-width:0!important;width:100%!important;align-items:stretch!important}
+  #app .pc-page .pc-actions .pc-buttons>.pc-btn {position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;max-width:100%!important;width:100%!important;min-height:46px!important;height:auto!important;padding:10px 5px!important;font-size:13px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:center!important}
+  #app .pc-page .pc-overflow {display:block!important;max-width:100%!important;width:100%!important;min-width:0!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+  #app .pc-page .pc-overflow>.pc-table {width:max-content!important;min-width:610px!important;table-layout:auto!important}
+  #app .pc-page .pc-overflow>.pc-table th, #app .pc-page .pc-overflow>.pc-table td {white-space:nowrap!important;font-size:12px!important;padding:9px 8px!important}
+  #app .pc-page .pc-stats {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;max-width:100%!important}
+  #app .pc-page .pc-stats>div {min-width:0!important;padding:10px 4px!important;font-size:11px!important;overflow-wrap:anywhere!important;text-align:center!important}
+  #app .pc-page .pc-card textarea {width:100%!important;max-width:100%!important;min-width:0!important;min-height:90px!important;font-size:16px!important}
+  #app .pc-page .pc-title {gap:8px!important;min-width:0!important}
+  #app .pc-page .pc-title h1 {white-space:normal!important;min-width:0!important;overflow-wrap:anywhere!important}
+}
+
+/* V14 — Entradas de Estoque: ajuste exclusivo de apresentação em celulares. */
+@media screen and (max-width:767px){
+ #app .en-page,#app .en-page *{box-sizing:border-box!important}
+ #app .en-page{width:100%!important;max-width:100%!important;min-width:0!important;padding:9px!important;overflow-x:clip!important}
+ #app .en-page .en-card,#app .en-page .en-two,#app .en-page .en-finance-actions{width:100%!important;max-width:100%!important;min-width:0!important}
+ #app .en-page .en-title{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;padding:12px!important}
+ #app .en-page .en-title h1{font-size:17px!important;line-height:1.35!important;white-space:normal!important;min-width:0!important}
+ #app .en-page .en-shortcut{flex:0 0 auto!important;font-size:12px!important;max-width:42%!important}
+ #app .en-page .en-header,#app .en-page .en-add,#app .en-page .en-fin,#app .en-page .en-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px!important;align-items:stretch!important;align-content:start!important;height:auto!important;min-height:0!important;max-height:none!important}
+ #app .en-page .en-grid>.en-field{display:flex!important;flex-direction:column!important;gap:6px!important;grid-column:auto!important;grid-row:auto!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;margin:0!important;font-size:13px!important;line-height:1.35!important;white-space:normal!important}
+ #app .en-page .en-field>span{display:block!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .en-page .en-field input,#app .en-page .en-field select{display:block!important;position:static!important;width:100%!important;max-width:100%!important;min-width:0!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px 11px!important;font-size:16px!important;line-height:normal!important;text-overflow:ellipsis!important}
+ #app .en-page .en-field input[type=date]{text-align:left!important;overflow:hidden!important}
+ #app .en-page .en-supplier-control,#app .en-page .en-product-control,#app .en-page .en-filter-supplier-control{display:flex!important;align-items:center!important;gap:8px!important;min-width:0!important;max-width:100%!important;width:100%!important}
+ #app .en-page .en-supplier-control input:not([type=hidden]),#app .en-page .en-product-control input,#app .en-page .en-filter-supplier-control input:not([type=hidden]){flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important}
+ #app .en-page .en-supplier-plus,#app .en-page .en-add .en-product-control .en-supplier-plus,#app .en-page .en-supplier-control .en-supplier-plus,#app .en-page .en-filter-supplier-control .en-supplier-plus{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;min-width:46px!important;max-width:46px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0!important;font-size:23px!important}
+ #app .en-page .en-addbtn,#app .en-page .en-search-button{position:static!important;grid-column:1/-1!important;grid-row:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;margin:0!important;padding:11px!important;font-size:15px!important;white-space:normal!important}
+ #app .en-page .en-two{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ #app .en-page .en-scroll{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch!important}
+ #app .en-page .en-scroll .en-table{width:max-content!important;min-width:650px!important;table-layout:auto!important}
+ #app .en-page .en-scroll .en-table th,#app .en-page .en-scroll .en-table td{font-size:12px!important;white-space:nowrap!important;padding:10px 8px!important}
+ #app .en-page .en-stats{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
+ #app .en-page .en-stats>div{min-width:0!important;padding:10px 4px!important;overflow-wrap:anywhere!important}
+ #app .en-page .en-buttons{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important;min-width:0!important}
+ #app .en-page .en-buttons>.en-btn,#app .en-page .en-buttons>.en-btn:last-child{position:static!important;grid-column:auto!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:48px!important;height:auto!important;padding:12px 5px!important;font-size:14px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:center!important}
+ #app .en-page .en-buttons>.en-btn small{display:none!important}
+ #app .en-page .en-check{display:flex!important;align-items:flex-start!important;gap:9px!important;white-space:normal!important;line-height:1.4!important}
+ #app .en-page .en-check input{flex:0 0 20px!important;width:20px!important;height:20px!important}
+}
+
+/* V16 — Financeiro / Visão Geral: apenas layout para iPhone. */
+@media screen and (max-width:767px){
+ #app .fin-page,#app .fin-page *{box-sizing:border-box!important}
+ #app .fin-page{width:100%!important;max-width:100%!important;min-width:0!important;padding:10px!important;overflow-x:clip!important}
+ #app .fin-page .fin-new-header,#app .fin-page .fin-subnav{max-width:100%!important;min-width:0!important}
+ #app .fin-page .fin-general-summary{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important}
+ #app .fin-page .fin-general-summary>div{min-width:0!important;padding:13px 10px!important;overflow-wrap:anywhere!important}
+ #app .fin-page .fin-general-summary small{font-size:12px!important;line-height:1.35!important;white-space:normal!important}
+ #app .fin-page .fin-general-summary strong{font-size:21px!important;line-height:1.3!important;white-space:normal!important}
+ #app .fin-page .fin-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;width:100%!important;min-width:0!important}
+ #app .fin-page .fin-card{width:100%!important;max-width:100%!important;min-width:0!important;padding:12px!important;overflow:hidden!important}
+ #app .fin-page .fin-card h3{font-size:14px!important;line-height:1.4!important;white-space:normal!important}
+ #app .fin-page .fin-general-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;gap:12px!important;align-items:stretch!important;align-content:start!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;margin:10px 0 15px!important}
+ #app .fin-page .fin-general-filters>label{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-row:auto!important;min-width:0!important;max-width:100%!important;width:100%!important;gap:7px!important;font-size:13px!important;line-height:1.35!important}
+ #app .fin-page .fin-general-filters input[type=date],#app .fin-page .fin-general-filters .fin-general-account-picker input{display:block!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:46px!important;min-height:46px!important;padding:8px 10px!important;font-size:16px!important;text-align:left!important;overflow:hidden!important}
+ #app .fin-page .fin-general-account-picker{display:flex!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important;align-items:center!important}
+ #app .fin-page .fin-general-account-picker input{flex:1 1 0!important;width:0!important}
+ #app .fin-page .fin-general-account-picker button{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;min-width:46px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0!important;font-size:23px!important}
+ #app .fin-page .fin-general-filters #fin-filter{position:static!important;grid-column:1/-1!important;grid-row:auto!important;display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;height:46px!important;min-height:46px!important;margin:0!important;padding:10px!important;font-size:15px!important}
+ #app .fin-page .fin-scroll{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+ #app .fin-page .fin-scroll .fin-table{width:max-content!important;min-width:100%!important;table-layout:auto!important}
+ #app .fin-page .fin-scroll .fin-table th,#app .fin-page .fin-scroll .fin-table td{white-space:nowrap!important;font-size:12px!important;padding:10px!important}
+ #app .fin-page .fin-extract-prompt{max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere!important;line-height:1.5!important;padding:20px 8px!important}
+}
+
+/* V17 — Extrato bancário: campos e botões sem sobreposição em telas pequenas. */
+@media screen and (max-width:767px){
+ #app .fin-page .fin-extract-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;gap:13px!important;align-items:stretch!important;align-content:start!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;margin:12px 0!important;padding:0!important}
+ #app .fin-page .fin-extract-filters>label{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;position:static!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;gap:7px!important;font-size:13px!important;line-height:1.35!important;white-space:normal!important}
+ #app .fin-page .fin-extract-filters>label>input,#app .fin-page .fin-extract-filters>label>select{display:block!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;max-height:46px!important;margin:0!important;padding:8px 10px!important;font-size:16px!important;line-height:1.3!important;box-sizing:border-box!important;transform:none!important}
+ #app .fin-page .fin-extract-filters .fin-account-picker{display:flex!important;position:static!important;align-items:stretch!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;max-height:46px!important;margin:0!important}
+ #app .fin-page .fin-extract-filters .fin-account-picker input{position:static!important;flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;max-height:46px!important;margin:0!important;padding:8px 10px!important;font-size:15px!important;text-overflow:ellipsis!important}
+ #app .fin-page .fin-extract-filters .fin-account-picker #fin-pick-account{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;min-width:46px!important;max-width:46px!important;height:46px!important;min-height:46px!important;max-height:46px!important;margin:0!important;padding:0!important;font-size:24px!important}
+ #app .fin-page .fin-extract-buttons{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:15px 0!important}
+ #app .fin-page .fin-extract-buttons button,#app .fin-page .fin-extract-buttons #fin-filter{position:static!important;grid-column:auto!important;grid-row:auto!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;margin:0!important;padding:8px 5px!important;font-size:14px!important;white-space:normal!important}
+ #app .fin-page .fin-extract-summary{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .fin-page .fin-extract-summary>div{min-width:0!important;max-width:100%!important;padding:13px 10px!important;overflow-wrap:anywhere!important}
+ #app .fin-page .fin-extract-summary small{font-size:12px!important;line-height:1.35!important;white-space:normal!important}
+ #app .fin-page .fin-extract-summary strong{font-size:20px!important;line-height:1.3!important;white-space:normal!important}
+}
+
+/* V18 — Transferências: correção exclusiva do layout no celular. */
+@media screen and (max-width:767px){
+ #app .fin-page .fin-form:has(#fin-origin),#app .fin-page .fin-form:has(#fin-origin) * ,#app .fin-page .fin-transfer-search-area,#app .fin-page .fin-transfer-search-area * ,#app .fin-page .fin-transfer-actions,#app .fin-page .fin-transfer-actions *{box-sizing:border-box!important}
+ #app .fin-page .fin-form:has(#fin-origin){display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px!important;align-items:stretch!important;align-content:start!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;min-width:0!important}
+ #app .fin-page .fin-form:has(#fin-origin)>label{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-row:auto!important;justify-content:flex-start!important;gap:6px!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:auto!important;margin:0!important;white-space:normal!important;line-height:1.35!important}
+ #app .fin-page .fin-form:has(#fin-origin)>label>input{display:block!important;position:static!important;width:100%!important;max-width:100%!important;min-width:0!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px 11px!important;font-size:16px!important;line-height:normal!important;overflow:hidden!important;text-overflow:ellipsis!important}
+ #app .fin-page .fin-form:has(#fin-origin) .fin-transfer-picker{display:flex!important;position:static!important;align-items:stretch!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;margin:0!important}
+ #app .fin-page .fin-form:has(#fin-origin) .fin-transfer-picker .fin-transfer-display{flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px!important;font-size:16px!important;text-overflow:ellipsis!important}
+ #app .fin-page .fin-form:has(#fin-origin) .fin-transfer-picker .fin-transfer-pick{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;min-width:46px!important;max-width:46px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0!important;font-size:23px!important}
+ #app .fin-page .fin-transfer-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;align-items:stretch!important;width:100%!important;min-width:0!important;height:auto!important}
+ #app .fin-page .fin-transfer-actions button{display:flex!important;align-items:center!important;justify-content:center!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:46px!important;padding:10px 5px!important;margin:0!important;font-size:14px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:center!important}
+ #app .fin-page .fin-transfer-search-area{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;gap:12px!important;align-items:stretch!important;align-content:start!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;margin:10px 0 15px!important}
+ #app .fin-page .fin-transfer-search-area .fin-history-search{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-row:auto!important;gap:6px!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;line-height:1.35!important}
+ #app .fin-page .fin-transfer-search-area .fin-history-search input{display:block!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px 11px!important;font-size:16px!important;overflow:hidden!important}
+ #app .fin-page .fin-transfer-search-area #fin-search-transfer{display:block!important;position:static!important;grid-column:1/-1!important;grid-row:auto!important;justify-self:stretch!important;align-self:stretch!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;margin:0!important;padding:10px!important;font-size:15px!important}
+ #app .fin-page .fin-transfer-results{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important}
+}
+
+/* V19 — Centros de Custos: correção de campos, botões e pesquisa no iPhone. */
+@media screen and (max-width:767px){
+ #app .cc-page,#app .cc-page *{box-sizing:border-box!important}
+ #app .cc-page{width:100%!important;max-width:100%!important;min-width:0!important;padding:9px!important;overflow-x:clip!important}
+ #app .cc-page .cc-panel{width:100%!important;max-width:100%!important;min-width:0!important;padding:11px!important;overflow:hidden!important}
+ #app .cc-page .cc-form,#app .cc-page .cc-form.cc-launch,#app .cc-page .cc-grid,#app .cc-page .cc-search-line{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;align-items:stretch!important;align-content:start!important;gap:12px!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;max-width:100%!important;overflow:visible!important}
+ #app .cc-page .cc-form>label,#app .cc-page .cc-search-line>label{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-row:auto!important;gap:6px!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;margin:0!important;line-height:1.35!important;white-space:normal!important;overflow-wrap:anywhere!important;font-size:13px!important}
+ #app .cc-page .cc-form>label input,#app .cc-page .cc-form>label select,#app .cc-page .cc-search-line>label input,#app .cc-page .cc-search-line>label select{display:block!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px 11px!important;font-size:16px!important;line-height:normal!important;text-overflow:ellipsis!important}
+ #app .cc-page .cc-form input[type=date],#app .cc-page .cc-search-line input[type=date]{overflow:hidden!important;text-align:left!important}
+ #app .cc-page .cc-pick{display:flex!important;align-items:center!important;gap:8px!important;min-width:0!important;max-width:100%!important;width:100%!important}
+ #app .cc-page .cc-pick>input:not([type=hidden]){flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important}
+ #app .cc-page .cc-pick>button{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;min-width:46px!important;max-width:46px!important;height:46px!important;min-height:46px!important;margin:0!important;padding:0!important;font-size:23px!important}
+ #app .cc-page .cc-buttons,#app .cc-page .cc-buttons.cc-launch-buttons{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;align-items:stretch!important;width:100%!important;min-width:0!important}
+ #app .cc-page .cc-buttons>button,#app .cc-page .cc-buttons.cc-launch-buttons>button{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:46px!important;padding:10px 5px!important;font-size:14px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:center!important}
+ #app .cc-page .cc-search-line>#cc-p-search{grid-column:1/-1!important;justify-self:stretch!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important;min-height:46px!important;font-size:15px!important}
+ #app .cc-page .cc-unified-search{overflow:hidden!important}
+ #app .cc-page .cc-unified-search>.cc-table{display:block!important;max-width:100%!important;width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important;white-space:nowrap!important}
+ #app .cc-page .cc-unified-search>.cc-table thead,#app .cc-page .cc-unified-search>.cc-table tbody{display:table-header-group}
+ #app .cc-page .cc-unified-search>.cc-table tbody{display:table-row-group}
+ #app .cc-page .cc-unified-search>.cc-table th,#app .cc-page .cc-unified-search>.cc-table td{white-space:nowrap!important;font-size:12px!important;padding:10px 8px!important}
+ #app .cc-page .cc-back-row #cc-back{width:100%!important;max-width:100%!important}
+}
+
+/* V20 — Faltas / Atestados: formulário e filtros responsivos no iPhone. */
+@media screen and (max-width:767px){
+ #app .rh-page,#app .rh-page *{box-sizing:border-box!important}
+ #app .rh-page{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:clip!important}
+ #app .rh-page .rh-form{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px!important;align-items:stretch!important;align-content:start!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;overflow:visible!important}
+ #app .rh-page .rh-form>.rh-field{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-row:auto!important;position:static!important;gap:6px!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;white-space:normal!important;overflow-wrap:anywhere!important;line-height:1.35!important}
+ #app .rh-page .rh-form>.rh-field>input,#app .rh-page .rh-form>.rh-field>select{display:block!important;position:static!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;margin:0!important;padding:10px!important;font-size:16px!important;line-height:1.3!important;text-overflow:ellipsis!important}
+ #app .rh-page .rh-form>.rh-field>input[type=date]{height:46px!important;min-height:46px!important;overflow:hidden!important}
+ #app .rh-page .rh-form>.rh-field>input[type=file]{font-size:13px!important;overflow:hidden!important;padding:8px!important}
+ #app .rh-page .rh-form>.rh-field .rh-pick,#app .rh-page .rh-form>.rh-field .rh-employee-picker{display:flex!important;gap:8px!important;align-items:stretch!important;min-width:0!important;max-width:100%!important;width:100%!important}
+ #app .rh-page .rh-form>.rh-field .rh-pick>input,#app .rh-page .rh-form>.rh-field .rh-employee-picker>input{flex:1 1 0!important;width:0!important;min-width:0!important;max-width:100%!important;height:46px!important}
+ #app .rh-page .rh-form>.rh-field .rh-pick>button,#app .rh-page .rh-form>.rh-field .rh-employee-picker>button{flex:0 0 46px!important;width:46px!important;min-width:46px!important;height:46px!important;padding:0!important}
+ #app .rh-page #ll-search-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px!important;align-items:stretch!important;align-content:start!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;min-width:0!important;max-width:100%!important;margin-top:14px!important}
+ #app .rh-page #ll-search-filters>.rh-field{grid-column:auto!important;grid-row:auto!important;display:flex!important;flex-direction:column!important;gap:6px!important;position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;white-space:normal!important}
+ #app .rh-page #ll-search-filters input,#app .rh-page #ll-search-filters select{position:static!important;min-width:0!important;max-width:100%!important;width:100%!important;min-height:46px!important;height:46px!important;font-size:16px!important;margin:0!important}
+ #app .rh-page #ll-search-filters>button{position:static!important;grid-column:1/-1!important;grid-row:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;padding:10px!important;margin:0!important;font-size:15px!important;white-space:normal!important}
+ #app .rh-page .rh-actions.rh-event-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important;min-width:0!important}
+ #app .rh-page .rh-actions.rh-event-actions>button{width:100%!important;min-width:0!important;max-width:100%!important;min-height:46px!important;height:auto!important;white-space:normal!important;padding:9px 5px!important;overflow-wrap:anywhere!important}
+ #app .rh-page .rh-table,#app .rh-page .rh-results{max-width:100%!important;min-width:0!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+ #app .rh-page table{max-width:none!important}
+}
+
+/* V21 — Folha de pagamento: layout mobile, sem modificar regras financeiras. */
+@media screen and (max-width:767px){
+ #app .fp-page,#app .fp-page *{box-sizing:border-box!important}
+ #app .fp-page{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:clip!important}
+ #app .fp-new-layout{width:100%!important;max-width:100%!important;min-width:0!important;padding:0 3px 12px!important}
+ #app .fp-new-layout .fp-titlebar{display:flex!important;flex-wrap:wrap!important;gap:8px!important;padding:12px!important}
+ #app .fp-new-layout .fp-titlebar h1{font-size:17px!important;line-height:1.35!important;overflow-wrap:anywhere!important}
+ #app .fp-new-layout .fp-card{width:100%!important;max-width:100%!important;min-width:0!important;padding:12px!important;overflow:hidden!important}
+ #app .fp-new-layout .fp-card h2{margin:-12px -12px 12px!important;padding:10px 12px!important;font-size:13px!important;line-height:1.4!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .fp-new-layout .fp-grid,#app .fp-new-layout .fp-fields,#app .fp-new-layout .fp-search-fields{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px!important;align-items:stretch!important;align-content:start!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important}
+ #app .fp-new-layout .fp-fields>label,#app .fp-new-layout .fp-search-fields>label{display:flex!important;flex-direction:column!important;grid-column:auto!important;grid-row:auto!important;position:static!important;gap:6px!important;min-width:0!important;width:100%!important;max-width:100%!important;margin:0!important;font-size:13px!important;line-height:1.4!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .fp-new-layout .fp-fields input,#app .fp-new-layout .fp-fields select,#app .fp-new-layout .fp-fields textarea,#app .fp-new-layout .fp-search-fields input,#app .fp-new-layout .fp-search-fields select{position:static!important;display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;margin:0!important;padding:9px 10px!important;font-size:16px!important;line-height:1.35!important;overflow:hidden!important;text-overflow:ellipsis!important}
+ #app .fp-new-layout .fp-wide{grid-column:auto!important;grid-row:auto!important}
+ #app .fp-new-layout .fp-wide textarea{height:85px!important;min-height:85px!important}
+ #app .fp-new-layout .fp-filter,#app .fp-new-layout .fp-ratehead{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;align-items:stretch!important;min-width:0!important;width:100%!important;height:auto!important}
+ #app .fp-new-layout .fp-filter>*,#app .fp-new-layout .fp-ratehead>*{min-width:0!important;max-width:100%!important;width:100%!important;margin:0!important}
+ #app .fp-new-layout .fp-filter input,#app .fp-new-layout .fp-filter select{min-width:0!important;width:100%!important;min-height:46px!important;font-size:16px!important}
+ #app .fp-new-layout .fp-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .fp-new-layout .fp-actions button{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;max-width:100%!important;width:100%!important;min-height:48px!important;height:auto!important;padding:10px 5px!important;font-size:13px!important;line-height:1.3!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:center!important}
+ #app .fp-new-layout .fp-tablewrap{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+ #app .fp-new-layout .fp-table{width:max-content!important;min-width:100%!important;max-width:none!important;table-layout:auto!important}
+ #app .fp-new-layout .fp-table th,#app .fp-new-layout .fp-table td{white-space:nowrap!important;font-size:12px!important;padding:9px!important}
+ #app .fp-new-layout .fp-rate-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:none!important;grid-auto-flow:row!important;gap:8px!important;max-height:none!important}
+ #app .fp-new-layout .fp-rate-cell{min-width:0!important;gap:8px!important}
+ #app .fp-new-layout .fp-rate-cell input{min-width:0!important;max-width:65%!important}
+}
+
+/* V22 — Lançamentos do funcionário: vales, adicionais, comissões e pagamentos no iPhone. */
+@media screen and (max-width:767px){
+ #app .rh-page #rh-tab-body,#app .rh-page #rh-tab-body *{box-sizing:border-box!important}
+ #app .rh-page #rh-tab-body{width:100%!important;min-width:0!important;max-width:100%!important;overflow:hidden!important}
+ #app .rh-page #rh-tab-body .rh-form,#app .rh-page #rh-tab-body #ll-search-filters{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:12px!important;align-items:stretch!important;align-content:start!important;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;max-height:none!important;overflow:visible!important}
+ #app .rh-page #rh-tab-body .rh-form>.rh-field{display:flex!important;flex-direction:column!important;position:static!important;grid-column:1/-1!important;grid-row:auto!important;min-width:0!important;max-width:100%!important;width:100%!important;height:auto!important;gap:6px!important;margin:0!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .rh-page #rh-tab-body .rh-field>input,#app .rh-page #rh-tab-body .rh-field>select{position:static!important;display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;height:46px!important;min-height:46px!important;margin:0!important;padding:9px 11px!important;font-size:16px!important;line-height:1.3!important;text-overflow:ellipsis!important}
+ #app .rh-page #rh-tab-body .rh-field>input[type=date]{min-width:0!important;width:100%!important;max-width:100%!important;overflow:hidden!important}
+ #app .rh-page #rh-tab-body .rh-field>div:has(#rh-search-employee-name){display:flex!important;align-items:stretch!important;gap:8px!important;width:100%!important;min-width:0!important;max-width:100%!important;height:46px!important}
+ #app .rh-page #rh-tab-body #rh-search-employee-name{position:static!important;flex:1 1 0!important;min-width:0!important;width:0!important;max-width:100%!important;height:46px!important;margin:0!important;padding:9px!important;text-overflow:ellipsis!important}
+ #app .rh-page #rh-tab-body #rh-search-employee-pick{position:static!important;flex:0 0 46px!important;min-width:46px!important;width:46px!important;max-width:46px!important;height:46px!important;margin:0!important;padding:0!important}
+ #app .rh-page #rh-tab-body #ll-search-filters>button,#app .rh-page #rh-tab-body .rh-form>button{grid-column:1/-1!important;grid-row:auto!important;position:static!important;display:flex!important;justify-content:center!important;align-items:center!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;margin:0!important;padding:10px!important;font-size:15px!important;white-space:normal!important}
+ #app .rh-page #rh-tab-body .rh-actions.rh-event-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;width:100%!important;min-width:0!important;max-width:100%!important}
+ #app .rh-page #rh-tab-body .rh-actions.rh-event-actions>button{min-width:0!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:46px!important;margin:0!important;padding:10px 5px!important;font-size:13px!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ #app .rh-page #rh-tab-body .rh-scroll{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+ #app .rh-page #rh-tab-body .rh-scroll .rh-table{display:table!important;width:max-content!important;min-width:100%!important;max-width:none!important;table-layout:auto!important}
+ #app .rh-page #rh-tab-body .rh-scroll .rh-table th,#app .rh-page #rh-tab-body .rh-scroll .rh-table td{white-space:nowrap!important;padding:9px 10px!important;font-size:12px!important}
+}

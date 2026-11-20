@@ -1,0 +1,1 @@
+V13: Correção responsiva de Pedidos de Compra no celular. Campos em coluna, botões em duas colunas, tabelas com rolagem horizontal. Sem alterações no JavaScript ou regras de negócio.

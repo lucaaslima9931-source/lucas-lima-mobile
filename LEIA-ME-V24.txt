@@ -1,0 +1,1 @@
+V24: Ajuste responsivo da tela RESCISÕES para iPhone. Alterado apenas rescisoes/style.css. Sem alterações nas regras, cálculos ou scripts.

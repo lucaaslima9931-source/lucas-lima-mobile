@@ -1,0 +1,1 @@
+V15: Ajuste visual responsivo exclusivo de Contas a Pagar no iPhone. Mantidos os scripts e regras de negocio da V14. Atualize os arquivos no GitHub e teste em dispositivo real.

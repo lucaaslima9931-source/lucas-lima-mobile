@@ -1,0 +1,1 @@
+V9: Ajuste visual responsivo da tela Acerto de Estoque no iPhone. Mantidas as regras e os scripts de lancamentos. Atualize todos os arquivos no GitHub.

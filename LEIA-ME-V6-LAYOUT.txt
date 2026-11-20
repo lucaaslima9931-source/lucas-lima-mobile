@@ -1,0 +1,1 @@
+V6: ajustes de layout para iPhone em Vendas, Orcamentos e Trocas. Alterados apenas mobile-ajustes.css e versao de cache em index.html. Nenhuma regra de negocio modificada.
