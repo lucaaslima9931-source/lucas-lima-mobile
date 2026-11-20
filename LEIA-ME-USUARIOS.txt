@@ -1,0 +1,18 @@
+ERP MATRIZ — CADASTRO DE USUÁRIOS E PERMISSÕES
+
+Incluído o módulo CADASTROS > USUÁRIOS (também acessível pelo roteamento USUÁRIOS E PERMISSÕES).
+- Seleção de funcionário ativo já cadastrado.
+- Login exclusivo, perfil, situação, observações.
+- Perfis padrão: Administrador, Gerente, Vendedor, Caixa, Estoquista, Financeiro e Personalizado.
+- Permissões por usuário: perfil preenche o padrão; pode personalizar; restaurar padrão.
+- Administrador sempre tem todas as permissões.
+- Pesquisa por código, funcionário, login ou perfil; F12 por código; duplo clique para abrir.
+- Armazenamento local: erp_matriz_usuarios_v1.
+
+IMPORTANTE: Este módulo é um CADASTRO de configurações, NÃO é autenticação segura.
+Os arquivos HTML/JS e localStorage podem ser inspecionados ou modificados por quem tem acesso ao computador.
+Não armazena senhas nem bloqueia efetivamente as telas ou operações; para isso, é necessário servidor,
+login seguro, sessões e autorização validada no servidor. Não use dados reais sensíveis esperando
+proteção de acesso nesta versão local.
+
+Instalação: faça backup da pasta atual, extraia todos os arquivos e abra index.html.

@@ -1,0 +1,4 @@
+LUCAS LIMA — JANELAS PADRONIZADAS
+Base: ERP_SYSTEMS_PEDIDOS_COMPRA_USUARIO.zip
+Avisos, confirmações e localizadores de Entradas, Pedidos, Orçamentos, Vendas e Trocas usam janelas personalizadas. Campo USUÁRIO incorporado ao quadro DADOS DA VENDA.
+ATENÇÃO: versão local demonstrativa; teste os fluxos antes de usar com dados reais. Faça backup.

@@ -1,0 +1,20 @@
+ERP MATRIZ — CADASTRO DE FUNCIONÁRIOS E FOLHA
+
+1. Faça backup da pasta antiga do ERP antes de substituir arquivos.
+2. Extraia TODO o ZIP na mesma pasta e abra index.html.
+3. Em CADASTROS > FUNCIONÁRIOS, cadastre os funcionários e registre ocorrências.
+4. Em ADMINISTRATIVO > FOLHA DE PAGAMENTO, escolha a competência anterior, gere a folha e confira os valores antes de registrar pagamentos individuais.
+
+FUNCIONA NESTA VERSÃO:
+- Cadastro de funcionários com pesquisa, duplo clique e F12 por código/CPF.
+- Registro de faltas, atestados (PDF/imagem), vales, adiantamentos, adicionais e ajustes de comissão.
+- Atestados salvos no armazenamento IndexedDB deste navegador; não migram automaticamente com o ZIP.
+- Demonstrativo mensal, cálculo de remuneração-base como maior valor entre fixo e comissão, descontos e pagamento individual/parcial.
+- Impressão do demonstrativo usando o diálogo de impressão do navegador.
+
+LIMITAÇÕES IMPORTANTES:
+- A apuração do mês anterior fica disponível a partir do dia 1º, mas a geração da folha requer clique em GERAR / ATUALIZAR FOLHA.
+- O módulo de Vendas atual não registra um identificador de vendedor em todos os documentos. Portanto, as comissões NÃO são calculadas automaticamente a partir das vendas atuais; use AJUSTE DE COMISSÃO até completar essa integração.
+- Pagamentos da folha ficam registrados no módulo RH; a conciliação automática com contas/caixa do FINANCEIRO ainda não foi implementada nesta versão.
+- O cálculo NÃO inclui INSS, FGTS, IRRF, DSR, férias, 13º ou demais encargos e regras trabalhistas. O demonstrativo é GERENCIAL e não substitui uma folha legal validada por contador.
+- Não altere a pasta nem limpe os dados do navegador sem fazer backup; o sistema usa localStorage e IndexedDB.

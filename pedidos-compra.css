@@ -1,0 +1,82 @@
+
+/* Pesquisa de pedidos: abertura com duplo clique */
+.pc-search-result{cursor:pointer}.pc-search-result:hover{background:#e8f2ff}.pc-search-result:focus{outline:2px solid #2373d6;outline-offset:-2px}.pc-search-hint{text-align:center;color:#627d9d;padding:24px!important}
+
+.pc-supplier-dialog{width:min(960px,calc(100vw - 32px));max-height:calc(100vh - 40px);overflow:auto;background:#fff;border-radius:11px;box-shadow:0 20px 55px #00152f66;color:#153c71;font-family:Arial,sans-serif}
+.pc-supplier-dialog>header{background:#205995;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:22px 20px;min-height:72px;font-weight:700}
+.pc-supplier-dialog>header button{background:#205995;border:1px solid #a5c4e6;color:#fff;border-radius:5px;width:36px;height:36px;font-size:24px;cursor:pointer}
+.pc-supplier-content{padding:20px}
+.pc-supplier-search{display:grid;grid-template-columns:110px minmax(0,1fr) 90px 148px;gap:6px;align-items:end}
+.pc-supplier-search label{font-size:11px;font-weight:700;display:flex;flex-direction:column;gap:7px}
+.pc-supplier-search select,.pc-supplier-search input{width:100%;height:44px;border:1px solid #bfd3f3;border-radius:5px;padding:9px;font-size:13px;color:#173d70;background:white}
+.pc-supplier-search button{height:43px;border:0;border-radius:5px;color:white;font-weight:700;font-size:11px;cursor:pointer}
+#pc-sup-find{background:#205995}#pc-sup-new{background:#009e79}
+.pc-supplier-list{overflow:auto;margin-top:13px;min-height:83px}
+.pc-supplier-list table{border-collapse:collapse;width:100%;font-size:12px}
+.pc-supplier-list th{background:#193e74;color:#fff;padding:14px;text-align:left}
+.pc-supplier-list td{padding:13px;border-bottom:1px solid #c9d9ed}
+.pc-supplier-list tbody tr[data-supplier-id]{cursor:pointer}
+.pc-supplier-list tbody tr[data-supplier-id]:hover{background:#e8f2ff}
+.pc-supplier-status{background:#b4ecd0;border-radius:20px;padding:5px 12px;color:#136344;font-weight:700}
+.pc-supplier-status.inactive{background:#ffe3e3;color:#9a2a2a}
+.pc-supplier-content footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #d5e2f3;padding-top:16px;margin-top:14px;font-size:11px}
+#pc-sup-cancel{padding:12px 18px;background:#e8f1ff;border:1px solid #bdd3fa;border-radius:5px;color:#205995;cursor:pointer}
+@media(max-width:680px){.pc-supplier-search{grid-template-columns:1fr 1fr}.pc-supplier-search label:nth-child(2){grid-column:span 2;grid-row:2}.pc-supplier-content footer{gap:10px}}
+
+.pc-product-back{display:block;margin:12px 0;padding:12px 18px;background:#e42c43;color:white;border:0;border-radius:5px;font-weight:700;cursor:pointer}
+#pc-prod-find{background:#205995}#pc-prod-new{background:#009e79}
+
+/* Pesquisa de fornecedores: manter grade alinhada sem botão de cadastro */
+.pc-supplier-search:has(#pc-sup-query):not(:has(#pc-sup-new)){grid-template-columns:110px minmax(0,1fr) 100px}
+
+/* V524: modal dos pedidos no mesmo padrão de Entradas */
+#pc-modal.pc-modal{position:fixed!important;inset:0!important;z-index:999999!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:18px!important;background:rgba(7,28,61,.62)!important;box-sizing:border-box!important}
+#pc-modal .pc-supplier-dialog{display:flex;flex-direction:column;overflow:hidden;width:min(960px,calc(100vw - 36px));max-height:calc(100vh - 36px)}
+#pc-modal .pc-supplier-content{display:flex;flex-direction:column;min-height:0;overflow:hidden}
+#pc-modal .pc-supplier-list{overflow:auto;max-height:48vh;min-height:90px}
+#pc-modal .pc-supplier-list tbody tr[data-product-code]{cursor:pointer}
+#pc-modal .pc-supplier-list tbody tr[data-product-code]:hover{background:#e8f2ff}
+#pc-modal .pc-supplier-search{grid-template-columns:110px minmax(0,1fr) 90px 148px}
+#pc-modal .pc-supplier-search:has(#pc-sup-query):not(:has(#pc-sup-new)){grid-template-columns:110px minmax(0,1fr) 100px}
+#pc-modal #pc-prod-find{background:#205995}#pc-modal #pc-prod-new{background:#009e79}
+#pc-modal #pc-prod-cancel{padding:12px 18px;background:#e8f1ff;border:1px solid #bdd3fa;border-radius:5px;color:#205995;cursor:pointer}
+@media(max-width:680px){#pc-modal .pc-supplier-search{grid-template-columns:1fr 1fr}#pc-modal .pc-supplier-search label:nth-child(2){grid-column:span 2;grid-row:2}}
+
+/* V525 — autenticação de pedidos no modelo de Abrir Caixa, sem afetar outras telas. */
+#pc-auth-overlay.ae-modal-overlay{position:fixed;inset:0;z-index:1000000;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(7,29,59,.65)}
+#pc-auth-overlay .pc-auth-caixa-modelo{width:min(470px,calc(100vw - 32px));max-width:470px;min-height:548px;max-height:95vh;border-radius:12px;background:white;display:flex;flex-direction:column;overflow:hidden;color:#173e70;box-shadow:0 16px 55px #001b4b66}
+#pc-auth-overlay .pc-auth-caixa-modelo>header{display:flex;align-items:center;justify-content:space-between;min-height:65px;box-sizing:border-box;background:#245b98;color:white;padding:19px 20px}
+#pc-auth-overlay .pc-auth-caixa-modelo>header strong{font-size:16px;font-weight:800;color:#fff}
+#pc-auth-overlay .pc-auth-caixa-modelo>header button{background:transparent;border:0;color:#fff;font-size:25px;cursor:pointer}
+#pc-auth-overlay .pc-auth-caixa-modelo .ae-modal-body{padding:27px 20px 8px;display:flex;flex:1;flex-direction:column;gap:13px;overflow-y:auto}
+#pc-auth-overlay .pc-auth-caixa-modelo .ae-modal-body label{display:block;margin-bottom:-9px;font-size:13px;font-weight:800;color:#153c6b}
+#pc-auth-overlay .pc-auth-caixa-modelo .ae-modal-body input{box-sizing:border-box;width:100%;height:43px;border:1px solid #b8d0ed;border-radius:7px;padding:10px 12px;font-size:14px;color:#173e70}
+#pc-auth-overlay .pc-auth-caixa-modelo .ae-modal-body input:focus{outline:2px solid #6ca6ff;outline-offset:0}
+#pc-auth-overlay .pc-auth-person{background:#e7f0fc;border:1px solid #c3d6f4;border-radius:5px;padding:13px 14px;display:flex;flex-direction:column;gap:4px;min-height:62px;box-sizing:border-box}
+#pc-auth-overlay .pc-auth-person strong{font-size:14px;font-weight:800;color:#17477f}
+#pc-auth-overlay .pc-auth-person small{font-size:12px;color:#58749a}
+#pc-auth-overlay #pc-auth-error{color:#c62828;font-size:12px;min-height:15px;margin:0}
+#pc-auth-overlay .pc-auth-note{color:#58749a;font-size:11px;line-height:1.4;margin:26px 0 6px}
+#pc-auth-overlay .pc-auth-caixa-modelo footer{display:flex;justify-content:center;gap:10px;border-top:0;padding:17px 20px 20px}
+#pc-auth-overlay .pc-auth-caixa-modelo footer button{background:#1d5ca8;color:white;border:1px solid #1d5ca8;border-radius:5px;padding:11px 18px;font-size:12px;font-weight:700;cursor:pointer}
+#pc-auth-overlay .pc-auth-caixa-modelo footer button[data-fechar]{background:#c7defb!important;color:#123e76!important;border:1px solid #7eafe9!important}
+
+/* V526: botão CANCELAR dos seletores de fornecedor dos Pedidos de Compra,
+   igual ao botão azul-claro do seletor de Entradas de Estoque. */
+#pc-modal #pc-sup-cancel,
+#pc-modal .pc-supplier-content footer #pc-sup-cancel {
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:40px!important;
+  padding:10px 17px!important;
+  background:#e8f1ff!important;
+  background-color:#e8f1ff!important;
+  border:1px solid #bdd3fa!important;
+  border-radius:5px!important;
+  color:#205995!important;
+  font:400 12px Arial,sans-serif!important;
+  box-shadow:none!important;
+  cursor:pointer!important;
+}
+#pc-modal #pc-sup-cancel:hover {background:#dbeaff!important;}

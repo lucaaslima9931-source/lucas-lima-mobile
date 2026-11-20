@@ -1,0 +1,8 @@
+LUCAS LIMA — LOJA ÚNICA
+A loja fixa é 01 – MATRIZ.
+O botão NOVO foi retirado do Cadastro da Loja.
+GRAVAR salva a primeira vez e ALTERAR atualiza os dados da mesma loja.
+Após salvar, o nome fantasia aparece no cabeçalho e na tela de login.
+A logomarca e a foto de fundo da tela de login são carregadas do cadastro salvo.
+Os dados ficam no navegador deste computador (localStorage). Não há sincronização entre computadores.
+Este é um protótipo de testes, sem autenticação real.

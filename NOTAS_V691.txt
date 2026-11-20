@@ -1,0 +1,1 @@
+V691: base V689. Restaura renderização de Saída de Caixa e Sangria, corrigindo controle de parcelas inserido na tela errada. Sangria por forma de pagamento, conta de destino e taxa no crédito. Não migra lançamentos antigos automaticamente. Verificar em Chrome antes de uso real.

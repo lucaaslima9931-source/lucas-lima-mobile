@@ -1,0 +1,7 @@
+ERP MATRIZ — PERMISSÕES DETALHADAS
+
+Incluídas 11 categorias de permissões específicas, com grupos expansíveis e limite de desconto por usuário.
+Perfis carregam permissões iniciais editáveis, exceto administrador (todas).
+O cadastro mantém os dados no armazenamento local do navegador.
+ATENÇÃO: estas permissões são CONFIGURAÇÕES, não barreiras reais de segurança. Login, senha, validação de permissões em cada operação e auditoria exigem backend/autenticação segura.
+Faça backup antes de substituir arquivos.

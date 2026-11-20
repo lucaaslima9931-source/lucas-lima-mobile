@@ -1,0 +1,6 @@
+LUCAS LIMA — Ajustes de 31/10/2026
+- Retirado VENDEDORES do menu CADASTROS. O arquivo histórico permanece para preservar registros antigos.
+- VENDAS seleciona funcionários ativos classificados como VENDEDOR (COMISSÃO), sem alterar o cadastro de funcionários.
+- Ajustadas comissões para vendas vinculadas diretamente a funcionário, preservando identificadores históricos.
+- MARCAS, CATEGORIAS e UNIDADES: visual compacto no padrão de FUNCIONÁRIOS.
+- Dados persistidos no armazenamento do navegador; faça backup antes de substituir a versão.

@@ -1,0 +1,15 @@
+LUCAS LIMA — CONFIGURAÇÃO DE IMPRESSORAS
+
+Abra ERP_SYSTEMS/index.html e entre em CONFIGURAÇÕES → CONFIGURAÇÃO DE IMPRESSORAS.
+
+Configure cada documento: papel A4, A5, Carta, 58 mm, 80 mm; orientação,
+margens (mm), cópias; salve o padrão; veja a prévia e use IMPRIMIR ou
+SALVAR EM PDF (selecionando Salvar como PDF na janela do navegador).
+
+IMPORTANTE: a prévia e a impressão neste módulo usam um DOCUMENTO ILUSTRATIVO.
+Os demais módulos não foram reescritos para adotar automaticamente os padrões;
+para isso, cada fluxo de impressão deverá integrar o configurador.
+A impressão real depende do navegador e driver da impressora. Os padrões
+ficam no armazenamento local deste navegador, não sincronizados na nuvem.
+A escolha de impressora e a geração de PDF são feitas pelo navegador.
+Não há controle de permissão por perfil neste módulo de demonstração.

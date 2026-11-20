@@ -1,0 +1,1 @@
+Correção Marcas, Categorias e Unidades: impede inclusão automática de segundo campo USUÁRIO e de botão ATALHOS adicional. Mantém o botão ATALHOS no cabeçalho, pesquisa inferior e botões NOVO, GRAVAR, ALTERAR e VOLTAR.

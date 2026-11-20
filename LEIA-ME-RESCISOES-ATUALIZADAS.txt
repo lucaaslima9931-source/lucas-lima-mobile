@@ -1,0 +1,1 @@
+RESCISÕES: novo layout compacto, seleção de funcionários, cálculos estimativos, contas a pagar e pagamento integral. ATENÇÃO: conferir legislação trabalhista e dados de férias antes de gerar; não inclui automaticamente aviso prévio, FGTS, INSS e IRRF.

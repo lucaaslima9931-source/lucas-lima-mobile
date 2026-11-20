@@ -1,0 +1,4 @@
+ERP MATRIZ — VENDAS E TROCAS
+Inclui telas locais para vendas, trocas e romaneio individual.
+ATENÇÃO: Esta versão não integra contas a receber, caixa, comissões, permissões, promoções ou rotas; pagamentos informados são registros da venda, não confirmações bancárias.
+Faça backup antes de usar. Não use como controle financeiro definitivo sem validar integrações.

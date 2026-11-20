@@ -1,0 +1,9 @@
+LUCAS LIMA - ATUALIZAÇÃO CADASTRO DA LOJA
+- Layout padronizado em 3 colunas, com seção DADOS DA LOJA.
+- USUÁRIO na mesma linha, após E-MAIL.
+- Botão ATALHOS no cabeçalho superior.
+- Botão PESQUISAR retirado do Cadastro da Loja.
+- LOCALIZAR ou F12 abre janela central para código da loja.
+- F1 exibe a janela de atalhos. Novo, Gravar, Alterar e Voltar sem atalhos.
+- Imagem de fundo do login e logomarca configuráveis no Cadastro da Loja.
+- O protótipo armazena dados apenas neste navegador, sem servidor.

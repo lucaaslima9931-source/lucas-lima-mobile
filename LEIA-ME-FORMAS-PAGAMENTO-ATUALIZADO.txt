@@ -1,0 +1,8 @@
+LUCAS LIMA — FORMAS DE PAGAMENTO
+
+- F12 abre a localização pelo código; ENTER confirma e ESC fecha.
+- PESQUISAR abre uma janela com todos os cadastros, filtro por código/descrição/tipo e duplo clique para abrir.
+- Cartões podem ter limite de 1 a 120 parcelas, com taxa individual por parcela no mesmo cadastro.
+- DINHEIRO: CAIXA DA LOJA. PIX e cartões: CONTA BANCÁRIA. BOLETO: CONTAS A RECEBER (sem saldo financeiro imediato).
+- As taxas configuradas são dados do cadastro. A efetiva contabilização bancária/recebíveis nas vendas depende das integrações dos módulos financeiros e deve ser testada antes de uso real.
+- Os dados existentes no armazenamento local do navegador são preservados.

@@ -1,0 +1,5 @@
+LUCAS LIMA — Auditoria de usuário (versão local)
+
+O mecanismo central registra o usuário autenticado nas gravações de listas e documentos identificáveis (id, código, número), preservando o responsável quando os dados não mudam. Inclui registros únicos e coleções de registros. Consultas e impressões não alteram o armazenamento.
+
+LIMITAÇÕES: módulos que não usam armazenamento JSON identificável, operações que escrevem em outros formatos ou telas que exibem valores fixos precisam de integração individual. Não há garantia de auditoria completa ou de segurança contra manipulação em um sistema local. Validar cada módulo antes do uso real.

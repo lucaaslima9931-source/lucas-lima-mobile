@@ -1,0 +1,1 @@
+TAXA PIX — No Cadastro de Formas de Pagamento, selecione TIPO PIX para configurar a taxa percentual. A taxa é armazenada por forma de pagamento. Na tela de Vendas, o pagamento PIX calcula e guarda valor líquido após taxa. Os registros existentes continuam preservados. Observação: conferir integração dos demais fluxos financeiros no navegador antes de usar em produção.

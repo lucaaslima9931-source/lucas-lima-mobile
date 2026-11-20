@@ -1,0 +1,3 @@
+V693 - VERSÃO DE TESTE / NÃO HOMOLOGADA
+Alteração preliminar na conciliação de estornos bancários: calcula reversão proporcional da taxa original, registra saída líquida e lançamento informativo da reversão de taxa.
+ATENÇÃO: não foi concluída a implementação das regras de seleção do caixa original no mesmo dia, integração de todos os fluxos de trocas e estornos conjuntos, nem testes ponta a ponta com dados reais. Não usar em produção sem validação.

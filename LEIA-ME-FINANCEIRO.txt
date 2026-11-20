@@ -1,0 +1,1 @@
+FINANCEIRO: painel de contas, saldos, transferências, extratos, CSV/OFX e conciliação manual. Dados locais do navegador. ATENÇÃO: integrações automáticas com Caixa, Vendas, Contas a Pagar/Receber e taxas ainda não estão implementadas nesta versão; estorno com senha e autenticação segura também não. Não usar como contabilidade definitiva.

@@ -1,0 +1,6 @@
+LUCAS LIMA - CORREÇÕES
+- Situação inicial das vendas e trocas: PENDENTE (não NOVA).
+- Campo USUÁRIO realocado para a área de dados principais, antes dos botões, quando possível.
+- Preservados os módulos e dados existentes.
+- Não apagar o armazenamento do navegador; faça backup antes de substituir.
+- Atenção: autenticação demonstrativa/local não constitui auditoria segura.

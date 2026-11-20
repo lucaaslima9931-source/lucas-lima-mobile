@@ -1,0 +1,9 @@
+LUCAS LIMA V736 - TELA BACKUP
+
+1. Extraia o ZIP inteiro.
+2. Abra LUCAS_LIMA/index.html da pasta LUCAS_LIMA_V736, e nao da V734.
+3. Entre em CONFIGURACOES > BACKUP.
+4. A tela deve mostrar BACKUP DO SISTEMA, BACKUP MANUAL e BACKUP AUTOMATICO.
+5. O envio automatico por email ainda nao esta operacional: requer servidor.
+
+Os dados do navegador podem depender da origem/pasta usada para abrir o HTML. Faca copia de seguranca antes de mudar de versao.

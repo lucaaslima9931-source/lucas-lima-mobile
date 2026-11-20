@@ -1,0 +1,3 @@
+V87 - RECEBIMENTOS DO CAIXA
+Localização V/N, pagamento parcial, registro em Contas a Receber e Caixa.
+Atenção: protótipo local sem autenticação segura. Faça backup antes de testar.

@@ -1,0 +1,1 @@
+CORREÇÕES: CPF preenchido automaticamente ao selecionar funcionário; F12 encaminhado da tela principal para a janela de localizar folha, inclusive com foco fora do iframe. F5 e F1 preservados. Não altera os cadastros existentes.

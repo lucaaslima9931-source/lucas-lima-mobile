@@ -1,0 +1,6 @@
+LUCAS LIMA — PEDIDOS DE COMPRA
+Abrir index.html no navegador. COMPRAS > PEDIDOS DE COMPRA.
+Pedidos apenas para envio ao fornecedor: sem movimentação de estoque ou financeiro.
+Imprimir permite Salvar como PDF no navegador.
+Usuário exibido nos cadastros; identificação atual é demonstração local, não autenticação segura.
+Faça backup antes de substituir a versão anterior.

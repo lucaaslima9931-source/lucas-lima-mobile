@@ -1,0 +1,7 @@
+ERP MATRIZ — PADRONIZAÇÃO VISUAL
+
+Base: versão Vendas e Trocas com painel de estoque e atalhos.
+As telas de Vendas, Trocas e Orçamentos receberam o padrão de cores, tipografia, cartões, campos e botões do Cadastro de Produtos.
+O menu lateral, os cadastros e as rotinas de negócio existentes foram preservados.
+Não há migração nem limpeza de dados. Os dados são locais ao navegador/origem; faça backup antes de trocar de pasta.
+Ainda não foi feita auditoria completa de todas as telas nem integração financeira.

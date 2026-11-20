@@ -1,0 +1,7 @@
+CAIXA - ALTERAÇÕES DESTA VERSÃO
+
+1. Menu CAIXA em uma única tela.
+2. Bloqueio da baixa de vendas sem um caixa aberto; por segurança, bloqueia também quando há mais de um caixa aberto e não há identificação inequívoca de sessão.
+3. Baixa de vendas registra pagamentos imediatos no caixa aberto, com referência única por venda/parcela de pagamento. Boletos não entram como dinheiro recebido.
+4. Contas a receber: recebimento permanece bloqueado no módulo original porque este sistema local ainda não possui autenticação segura do operador; não foi liberada baixa sem controle de acesso.
+5. IMPORTANTE: identificação por código/senha no protótipo não valida credenciais. Não usar como controle financeiro de produção sem implementar autenticação e testes integrados.

@@ -1,0 +1,1 @@
+ACERTO DE ESTOQUE: removida a causa da duplicação no observador de pedidos-compra.js. Mantido somente o campo USUÁRIO na primeira linha, após SITUAÇÃO. Demais funções preservadas.

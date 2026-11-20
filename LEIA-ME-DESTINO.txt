@@ -1,0 +1,8 @@
+LUCAS LIMA — Entradas de Estoque
+
+COMPRAS > ENTRADAS DE ESTOQUE: selecione ESTOQUE ou ALMOXARIFADO no campo DESTINO DA ENTRADA.
+ADMINISTRATIVO: removida a opção duplicada ENTRADA DE ALMOXARIFADO; SAÍDA DE ALMOXARIFADO permanece.
+GRAVAR não movimenta saldo. BAIXAR movimenta somente o destino escolhido. REABRIR desfaz a movimentação mesmo com saldo negativo.
+Entradas anteriores sem destino são tratadas como ESTOQUE.
+O saldo de ALMOXARIFADO é calculado separadamente a partir das entradas baixadas destinadas ao almoxarifado.
+Observação: o ERP é um protótipo local no navegador; faça backup da versão anterior e teste com dados de exemplo antes de usar dados reais.

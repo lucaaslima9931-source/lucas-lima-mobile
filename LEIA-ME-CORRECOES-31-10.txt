@@ -1,0 +1,10 @@
+LUCAS LIMA — CORREÇÕES VISUAIS (31/10/2026)
+
+1. Cadastro de Usuários: RESTAURAR PADRÃO, MARCAR TODAS e DESMARCAR TODAS
+   deixam de flutuar e permanecem no fluxo normal da seção de permissões.
+   Os botões principais continuam após a pesquisa, no fim do formulário.
+2. Cadastro de Formas de Pagamento: campos, títulos, seções, botões e
+   espaçamentos compactados no padrão visual do Cadastro de Funcionários.
+3. Não foram modificadas as regras de taxas PIX, débito e crédito.
+
+Abra LUCAS_LIMA/index.html no navegador após extrair todo o ZIP.

@@ -1,0 +1,7 @@
+LUCAS LIMA - CENTRAL DE LISTAGENS
+
+Abra ERP_SYSTEMS/index.html. No menu LISTAGENS, escolha o tipo de relatório, combine filtros, escolha colunas, agrupe, ordene, salve modelos e exporte CSV (abre no Excel) ou imprima/salve como PDF pelo navegador.
+
+Esta implementação trabalha com dados disponíveis no armazenamento local do navegador e identifica coleções por chaves dos módulos existentes. Relatórios podem ficar vazios caso os dados estejam em outro dispositivo, outra origem ou tenham estrutura não identificada. Compartilhamento real entre usuários, permissões, exportações nativas XLSX/ODS/DOCX e consultas centralizadas exigem backend e integração adicional.
+
+Todos os módulos anteriores foram preservados no ZIP.

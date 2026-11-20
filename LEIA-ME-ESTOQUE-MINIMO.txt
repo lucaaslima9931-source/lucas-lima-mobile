@@ -1,0 +1,1 @@
+ESTOQUE MÍNIMO: filtros por marca, categoria, situação e pesquisa; somente produtos que precisam de atenção; impressão e exportação CSV compatível com Excel. Abra index.html.

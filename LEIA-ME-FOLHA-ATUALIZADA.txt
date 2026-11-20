@@ -1,0 +1,4 @@
+FOLHA DE PAGAMENTO — LUCAS LIMA
+Abra index.html dentro da pasta LUCAS_LIMA.
+Tela de folha redesenhada no padrão compacto. Busca funcionários de erp_matriz_rh_v1, eventos do mês e comissões de vendas baixadas. Gravar, gerar, excluir e pagar folha. Geração cria registro vinculado em Contas a Pagar (erp_matriz_operacoes_v2). Pagamentos parciais atualizam o registro e o financeiro local.
+ATENÇÃO: Esta é uma versão LOCAL (armazenamento do navegador). Não há autenticação/servidor seguro para permissões: a alteração/exclusão de folha gerada exige permissão explícita no cadastro do usuário, não concedida automaticamente. NÃO utilize como folha oficial sem validar regras legais, segurança, persistência e conciliação financeira em servidor. A folha não calcula automaticamente INSS, IRRF, FGTS, férias e 13º.

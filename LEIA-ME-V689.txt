@@ -1,0 +1,1 @@
+Base: V685 enviada pelo usuário. Removido CONTAS A RECEBER apenas da navegação do FINANCEIRO (menu lateral e cartões). Dados e rotinas existentes preservados para evitar perda de histórico ou incompatibilidade com boletos/parcelas. Nenhuma conciliação das versões V686-V688 foi incluída.

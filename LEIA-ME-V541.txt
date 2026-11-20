@@ -1,0 +1,6 @@
+LUCAS LIMA — V541
+
+Alteração visual exclusiva da tela ADMINISTRATIVO > LANÇAMENTOS DE FUNCIONÁRIOS.
+Cores do cabeçalho, seções, campos e bordas padronizadas com FOLHA DE PAGAMENTO.
+Preservados disposição, botões, lógica de pesquisa, lançamentos e outros módulos.
+Abra LUCAS_LIMA/index.html no Google Chrome.

@@ -1,0 +1,1 @@
+Marcas, Categorias e Unidades: apenas um campo USUÁRIO, um ATALHOS no cabeçalho, quatro botões de ação e pesquisa inferior preservada. Funcionários não alterado.

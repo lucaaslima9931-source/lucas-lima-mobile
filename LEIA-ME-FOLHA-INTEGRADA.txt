@@ -1,0 +1,6 @@
+LUCAS LIMA — FOLHA DE PAGAMENTO INTEGRADA
+
+Abra index.html. No menu ADMINISTRATIVO, clique FOLHA DE PAGAMENTO.
+Foi preservada a estrutura original do LUCAS LIMA, inclusive os módulos de estoque e financeiro.
+O novo módulo usa os funcionários e formas de pagamento cadastrados no mesmo navegador e consulta vendas baixadas para comissões.
+IMPORTANTE: protótipo local. Os pagamentos e adiantamentos da folha ainda NÃO são gravados no livro do módulo FINANCEIRO original. Permissões por usuário, aprovações, fechamento histórico de comissões e backend multiusuário ainda não estão implementados. Não usar para folha real sem validação trabalhista e integração de dados.

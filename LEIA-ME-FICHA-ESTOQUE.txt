@@ -1,0 +1,1 @@
+Ficha de Estoque: removido campo USUÁRIO no cabeçalho (mantida coluna USUÁRIO nas movimentações); removido botão ATALHOS duplicado. Outras telas preservadas.

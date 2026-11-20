@@ -1,0 +1,15 @@
+BACKUP AUTOMATICO V751
+
+1. Instale Python 3 no Windows (habilite o comando py).
+2. Edite INICIAR_BACKUP.bat e preencha LL_SMTP_USER e LL_SMTP_PASSWORD com o e-mail remetente e senha de aplicativo SMTP. Nunca use a senha normal do Gmail.
+3. Execute INICIAR_BACKUP.bat e deixe a janela aberta. Acesse http://localhost:8765/index.html (NAO abra index.html por duplo clique).
+4. Na engrenagem, configure e grave o backup automatico. O sistema sincroniza os dados locais com o servidor a cada 60 segundos enquanto a pagina esta aberta.
+5. No horario escolhido, o servidor salva um arquivo JSON em backup_servidor e envia uma copia por e-mail. O historico local continua separado do historico do servidor.
+
+LIMITACOES IMPORTANTES:
+- O computador precisa estar ligado, o processo Python em execucao e a conexao com a internet ativa no horario.
+- Os dados do navegador so chegam ao servidor quando o sistema esta aberto e conectado; sem sincronizacao previa, nao ha dados novos para enviar.
+- Os dados do navegador nao sao compartilhados entre computadores automaticamente.
+- O servidor usa somente 127.0.0.1 e nao deve ser exposto a internet.
+- Os backups sao arquivos JSON com informacoes sensiveis; proteja o computador, a conta de e-mail e a pasta backup_servidor.
+- O armazenamento no servidor nao substitui um banco de dados central nem garante backup de anexos externos ao navegador.

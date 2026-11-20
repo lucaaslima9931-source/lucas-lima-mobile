@@ -1,0 +1,11 @@
+LUCAS LIMA — LOGIN MODERNO PARA TESTES
+
+Abra ERP_SYSTEMS/index.html.
+Código: 300
+Senha: 123456
+
+O nome é identificado automaticamente a partir do Cadastro de Usuários existente no navegador (pelo código). Caso não exista código 300 cadastrado, aparecerá USUÁRIO DE DEMONSTRAÇÃO. Os demais códigos cadastrados também podem ser reconhecidos, mas nesta versão de testes a senha 123456 é compartilhada.
+
+Para personalizar a imagem de fundo, entre em CADASTROS > CADASTRO DA LOJA, selecione FOTO DE FUNDO DA TELA DE LOGIN e clique GRAVAR. A logomarca cadastrada aparece no login e nas impressões existentes. Saia e volte ao login para ver a foto atualizada.
+
+ATENÇÃO: Esta é uma DEMONSTRAÇÃO LOCAL, sem autenticação segura, controle real de acesso, banco de dados ou sincronização. Não utilize dados reais ou confidenciais. O fundo e a logomarca são salvos no armazenamento do navegador e podem não caber se o armazenamento estiver cheio.

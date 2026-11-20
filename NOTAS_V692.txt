@@ -1,0 +1,6 @@
+V692 — baseada no ZIP V691 enviado.
+- Removido o seletor manual PARCELAS DO CARTÃO da Sangria.
+- Na baixa de sangria de crédito/débito, taxa calculada a partir dos pagamentos das vendas BAIXADAS, utilizando a taxa registrada em cada pagamento; consumo cronológico e desconto das sangrias já baixadas da mesma forma.
+- Se os registros de vendas não forem suficientes para justificar o valor, a baixa é impedida em vez de inventar parcelas ou taxas.
+- Mantidas as rotinas existentes de Saída de Caixa e demais módulos.
+LIMITAÇÃO: esta apuração usa vendas baixadas registradas em erp_matriz_vendas_v1; pagamentos de trocas e recebimentos ainda não entram na apuração automática. É necessária validação funcional no Chrome com cópia dos dados reais antes de uso em produção.

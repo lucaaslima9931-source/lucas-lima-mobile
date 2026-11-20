@@ -1,0 +1,1 @@
+V99: botão IMPRIMIR visível ao localizar parcela paga, ao lado de VOLTAR; impressão de recebimento selecionado pelo duplo clique. RECEBER permanece bloqueado para parcelas quitadas.

@@ -1,0 +1,1 @@
+V86: Códigos únicos V<número da venda>-<sequência> nas parcelas impressas e em contas a receber geradas pelas vendas. Mantida a base V85. A integração completa da consulta por código no Caixa ainda não foi implementada.

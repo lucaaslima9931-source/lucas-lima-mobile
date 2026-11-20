@@ -1,0 +1,4 @@
+V390 — ETAPA 1: SANGRIA POR FORMA DE PAGAMENTO
+Base: V389.
+Implementado: seleção de forma de pagamento na Sangria; validação do saldo por forma; baixa, cancelamento e regularização mantendo a forma; identificação da forma nos movimentos de transferência para a Tesouraria.
+NÃO IMPLEMENTADO NESTA ETAPA: mudança global do momento de reconhecimento no Financeiro para TODAS as baixas de vendas e trocas; acerto de estorno entre operadores/datas; conciliação financeira completa. NÃO USAR ESTA VERSÃO PARA CONTABILIDADE REAL ATÉ INTEGRAÇÃO E TESTES DE PONTA A PONTA.

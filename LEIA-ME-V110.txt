@@ -1,0 +1,2 @@
+V110 — CONTAS A PAGAR E ESTORNOS
+Entradas de estoque continuam gerando contas a pagar quando configuradas. Estornos de vendas não geram contas a pagar. Ao confirmar estorno, registra-se imediatamente movimentação na forma original (dinheiro, PIX ou cartão); somente dinheiro altera saldo físico. Boletos pendentes permanecem tratados por cancelamento das parcelas. Verifique integrações bancárias externas: não há execução real de estorno junto à operadora.

@@ -1,0 +1,9 @@
+LUCAS LIMA — BOTÃO FECHAR O SISTEMA NA TELA DE LOGIN
+
+Na tela de login moderna, clique em FECHAR O SISTEMA.
+
+ATENÇÃO: Em abas abertas manualmente no Chrome, o navegador normalmente bloqueia window.close(). Se isso acontecer, o sistema mostrará uma orientação para fechar a aba com X ou Ctrl+W. Isso é uma limitação de segurança do navegador, não um defeito do ERP.
+
+Não foi adicionado botão SAIR DO USUÁRIO. A captura de clique para saída do usuário no módulo de login foi retirada.
+
+O restante do sistema e os dados de teste permanecem como na versão anterior. Login de demonstração não é seguro para produção.

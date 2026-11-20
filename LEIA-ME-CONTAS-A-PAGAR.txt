@@ -1,0 +1,1 @@
+CONTAS A PAGAR: parcelas em linhas separadas, pagamento integral com juros/multa/desconto, filtros, impressão individual e histórico. LIMITAÇÕES: estorno com senha requer autenticação em servidor, ainda não implementada neste protótipo local. A integração de pagamentos ao Financeiro geral também está pendente.

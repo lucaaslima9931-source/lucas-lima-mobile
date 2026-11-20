@@ -1,0 +1,1 @@
+V744: adicionado botão ALTERAR ao lado de GRAVAR na configuração de backup. GRAVAR cria configuração; ALTERAR atualiza configuração existente. Envio automático continua indisponível sem servidor.

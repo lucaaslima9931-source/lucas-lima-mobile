@@ -1,0 +1,16 @@
+LUCAS LIMA — CONFIGURAÇÕES GERAIS (VERSÃO DE TESTES)
+
+Abra ERP_SYSTEMS/index.html e acesse CONFIGURAÇÕES > CONFIGURAÇÕES GERAIS.
+
+Incluído: tela azul/branca com seções de identificação, vendas, estoque,
+financeiro, segurança e aparência; salvar e restaurar padrões; confirmação
+para alterações importantes; histórico técnico local das mudanças.
+
+LIMITAÇÕES IMPORTANTES:
+- Configurações gravadas somente no navegador (localStorage).
+- Ainda não estão conectadas às regras de todos os módulos.
+- O cadastro de usuários local não implementa autenticação real, senha,
+  autorização de alterações nem sessão de servidor. Não confiar na tela
+  como controle de segurança.
+- Nenhum módulo anterior foi intencionalmente removido ou reescrito.
+- Cadastro da Loja, Backup e Impressoras permanecem separados.

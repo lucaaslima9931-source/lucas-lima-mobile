@@ -1,0 +1,6 @@
+LUCAS LIMA — CENTROS DE CUSTOS
+Abra index.html no navegador e acesse FINANCEIRO > CENTRO DE CUSTOS.
+Inclui cadastro, pesquisa, filtro de situação, bloqueio de duplicidade, impressão de cadastro/listagem, inativação/reativação com confirmação.
+SEGURANÇA: A inativação/reativação fica bloqueada até a permissão específica ser integrada ao Cadastro de Usuários. Não foi criada uma autorização fictícia.
+PENDENTE: A vinculação das despesas existentes e os totais/extrato financeiro do centro de custos dependem de integração com o módulo DESPESAS. A tela de extrato informa isso e não apresenta valores inventados.
+DADOS: Armazenados no localStorage do navegador. Para operação multiusuário real é necessário backend e banco de dados compartilhado.

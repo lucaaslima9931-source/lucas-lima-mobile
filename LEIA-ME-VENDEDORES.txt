@@ -1,0 +1,13 @@
+ERP MATRIZ — CADASTRO DE VENDEDORES
+
+Abra index.html. Acesse CADASTROS > VENDEDORES.
+
+Funcionalidades: vincular funcionário existente, comissão percentual, meta, situação, pesquisa, F12 por código, extrato, histórico e resumo por competência.
+
+REGRA: apenas vendas BAIXADAS e vinculadas ao vendedor geram comissão. Vendas pendentes/canceladas não contam. A folha de funcionários passa a usar essa regra.
+
+PENDÊNCIA: o módulo VENDAS ainda não possui campo vendedor; até ele ser implementado, o extrato de comissões não terá dados automáticos. O cálculo é gerencial, sem encargos legais automáticos.
+
+Armazenamento: localStorage do navegador, na mesma origem/caminho de execução. Faça cópias de segurança.
+
+Não foram alteradas as cores gerais do ERP MATRIZ.

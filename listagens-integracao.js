@@ -1,0 +1,2 @@
+/* LISTAGENS: integração com o LUCAS LIMA existente, preservando demais módulos. */
+(()=>{const anterior=window.open;window.open=function(nome){if(nome==='LISTAGENS'){screen=nome;active('RELATÓRIOS');root().innerHTML=`<section style="width:100%;padding:0"><iframe title="Central de Listagens" src="listagens/index.html" style="display:block;width:100%;height:calc(100vh - 110px);min-height:850px;border:0;background:white"></iframe></section>`;return;}return anterior(nome)}})();

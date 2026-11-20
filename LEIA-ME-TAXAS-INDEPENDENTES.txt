@@ -1,0 +1,5 @@
+LUCAS LIMA — Correção das taxas independentes por forma de pagamento.
+Ao abrir uma forma de pagamento ou clicar NOVO, os campos de taxas são carregados exclusivamente do cadastro selecionado.
+A renderização da grade não reutiliza valores da forma de pagamento anterior.
+Cada cadastro conserva suas taxas por parcela e sua taxa PIX.
+Dados armazenados no navegador continuam preservados. Taxas que já foram sobrescritas em versões anteriores devem ser recadastradas.

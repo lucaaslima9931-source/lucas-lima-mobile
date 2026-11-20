@@ -1,0 +1,5 @@
+LUCAS LIMA — CADASTRO DA LOJA
+
+Acesse CADASTROS > CADASTRO DA LOJA.
+Código 1 e identificação MATRIZ fixos. Nome fantasia obrigatório, demais dados opcionais. Logomarca até 750 KB. Dados salvos neste navegador. Cabeçalho centralizado em impressões compatíveis.
+LIMITAÇÕES: sem sincronização entre usuários, sem controle de permissão específico no novo cadastro; impressões isoladas em iframe podem exigir integração adicional.

@@ -1,0 +1,20 @@
+LUCAS LIMA — PAINEL GERENCIAL (VERSÃO DE TESTES)
+
+Abra ERP_SYSTEMS/index.html no navegador e clique RELATÓRIOS > PAINEL GERENCIAL.
+
+Painel fixo com indicadores de vendas baixadas, CMV histórico, despesas
+com competência explícita, resultado parcial, ticket médio, saldos gerais
+de contas a receber e pagar, quantidade de produtos, gráficos e comparativos.
+Filtros: Hoje, Ontem, Esta Semana, Este Mês, Mês Anterior, Este Ano e Personalizado.
+Clique nos cartões para ver registros; botões para imprimir/PDF, CSV, DRE e Listagens.
+
+LIMITAÇÕES IMPORTANTES:
+- Os dados são locais ao navegador, sem sincronização entre computadores.
+- Nem todas as fontes estão integradas (folha, estoque mínimo, comissões etc.).
+- CMV incompleto se vendas não gravaram custo histórico.
+- Despesas sem dataCompetencia e categoriaDRE não entram no resultado.
+- O saldo de contas a receber/pagar é geral e não é filtrado pelo período.
+- Acesso abre o módulo de origem, não necessariamente o documento individual.
+- Controle de permissões real para indicadores e drill-down ainda não foi integrado.
+- Resultado não é um demonstrativo contábil oficial.
+- Não foram alterados cadastros, vendas, DRE, Listagens ou demais módulos.

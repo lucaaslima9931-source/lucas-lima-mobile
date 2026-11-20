@@ -1,0 +1,14 @@
+ERP MATRIZ — MÓDULO DE ORÇAMENTOS
+
+Abra index.html no navegador e acesse VENDAS > ORÇAMENTOS.
+O orçamento tem número sequencial, cliente/vendedor opcionais, produtos, desconto,
+acréscimo, observações, gravação, alteração, pesquisa, F12 e impressão A4,
+bobina 80 mm, bobina 58 mm e PDF (salvar como PDF na caixa de impressão).
+
+NÃO EXISTE baixar, cancelar, aprovar nem gerar venda.
+O módulo NÃO movimenta estoque, financeiro, comissões ou vendas.
+Dados salvos no localStorage do navegador: erp_matriz_orcamentos_v1.
+
+ATENÇÃO: faça backup dos arquivos e dados antes de substituir a pasta.
+O armazenamento local não sincroniza entre computadores e pode ser apagado
+pelo navegador. A impressão depende das configurações da impressora.

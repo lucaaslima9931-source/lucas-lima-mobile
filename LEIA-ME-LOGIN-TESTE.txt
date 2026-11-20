@@ -1,0 +1,13 @@
+LUCAS LIMA - ACESSO DE DEMONSTRAÇÃO
+
+Abra ERP_SYSTEMS/index.html no navegador.
+USUÁRIO: admin
+SENHA: 123456
+
+Este login é apenas uma barreira visual para testes, não é autenticação
+segura. Ele não implementa permissões reais nem protege dados no
+navegador. Não usar com dados reais ou em produção.
+O Cadastro de Usuários existente não tem senhas e não está integrado
+a este acesso de demonstração.
+Use o botão de sair (⇥) no cabeçalho para voltar ao login.
+O restante do LUCAS LIMA permanece como na versão anterior.

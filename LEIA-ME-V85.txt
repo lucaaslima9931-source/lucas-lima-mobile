@@ -1,0 +1,1 @@
+V85: Incluído código N<número>-<parcela> na impressão de carnê de negociação e marcação automática QUEBRADA no acesso à tela de negociações após 3 dias completos de atraso. ATENÇÃO: o módulo de negociações da base V84 ainda não integra parcelas com Contas a Receber/Caixa. Não usar esta versão para recebimentos negociados sem conferência manual.

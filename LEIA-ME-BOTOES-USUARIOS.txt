@@ -1,0 +1,5 @@
+ATUALIZAÇÃO - CADASTRO DE USUÁRIOS
+Os botões NOVO, GRAVAR, ALTERAR, PESQUISAR, LOCALIZAR e VOLTAR
+ficam no final do formulário, após permissões e pesquisa de usuários.
+Não permanecem flutuando durante a rolagem.
+Demais módulos e regras foram mantidos.

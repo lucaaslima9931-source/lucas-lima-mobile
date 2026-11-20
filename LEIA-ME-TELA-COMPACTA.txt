@@ -1,0 +1,1 @@
+LUCAS LIMA - AJUSTE DE VISUALIZACAO\nA area principal e o menu possuem rolagem independente. O Cadastro da Loja foi compactado e seus botoes permanecem acessiveis. Nos outros modulos, listas extensas podem ter rolagem interna. A visualizacao completa depende da resolucao e zoom do navegador.\n

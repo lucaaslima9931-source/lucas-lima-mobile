@@ -1,0 +1,1 @@
+V175: permissões organizadas por módulo. Clique no nome do módulo para abrir e marcar/desmarcar acesso e operações. As permissões existentes e seus identificadores foram preservados. Sistema local: permissões de interface não substituem autenticação de servidor.

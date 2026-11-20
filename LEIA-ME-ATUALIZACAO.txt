@@ -1,0 +1,7 @@
+LUCAS LIMA — Correções desta versão
+- Cadastro da Loja: remove campos USUÁRIO extras fora da grade, inclusive cabeçalho.
+- Cabeçalho do Cadastro da Loja: mantém apenas um botão ATALHOS à direita.
+- Botões remover imagem alinhados à direita de cada quadro.
+- ENTER avança entre campos editáveis, sem gravar automaticamente; não interfere em janelas e login.
+- Layout compacto anterior preservado.
+- Dados de teste continuam no armazenamento local do navegador.

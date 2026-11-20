@@ -1,0 +1,1 @@
+Ajuste de layout: Marcas, Categorias e Unidades com campos, margens e alturas compactas seguindo o Cadastro de Funcionários. Preservadas as demais funcionalidades e os demais módulos.

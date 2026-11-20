@@ -1,0 +1,12 @@
+ERP MATRIZ — CADASTRO DE FORMAS DE PAGAMENTO
+
+Abra index.html no Chrome e acesse CADASTROS > FORMAS DE PAGAMENTO.
+O cadastro possui código sequencial, descrição sem duplicidade, tipo, conta de destino, situação, uso em vendas/compras, parcelamento, observações e taxas por operadora e quantidade de parcelas.
+Grave primeiro a forma de pagamento; depois inclua as taxas da operadora, uma para cada número de parcelas. A mesma combinação operadora/parcela é atualizada, não duplicada.
+
+As taxas são despesas da loja e não são repassadas ao cliente.
+A configuração é salva no localStorage deste navegador, chave erp_matriz_formas_pagamento_v1.
+
+IMPORTANTE: Este módulo configura formas e taxas, mas ainda NÃO movimenta o Financeiro, não registra liquidação bancária e não aplica taxas nas Vendas. Essas integrações dependem da implementação dos módulos operacionais e da vinculação com contas financeiras reais.
+
+Faça backup da pasta antes de substituir arquivos. Para preservar os cadastros locais, use o mesmo navegador e origem do arquivo.

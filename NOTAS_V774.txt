@@ -1,0 +1,1 @@
+V774: Ajuste compacto de titulos, aniversariantes, Top 3 Vendedores e Top 10 Produtos na tela INICIO. Mantidos dados, logica, cores e demais modulos.

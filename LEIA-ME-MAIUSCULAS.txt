@@ -1,0 +1,1 @@
+Campos de texto são convertidos em MAIÚSCULAS enquanto digita. Senhas e e-mails mantêm a digitação original. Os dados já cadastrados não são alterados automaticamente.

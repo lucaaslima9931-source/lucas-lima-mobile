@@ -1,0 +1,16 @@
+LUCAS LIMA — VERSÃO DE DEMONSTRAÇÃO LOCAL
+
+ALTERAÇÕES DESTA VERSÃO:
+- Marca LUCAS LIMA nas telas, mantendo LOJA 01 – MATRIZ.
+- CAIXA como menu principal independente.
+- VENDAS agrupa VENDAS, ORÇAMENTOS e TROCAS.
+- Caixa com abertura por código, bloqueio de segundo caixa por operador, entradas, saídas, sangrias em dinheiro, conferência e fechamento com registro de diferenças.
+- Impressão do painel via navegador.
+
+LIMITAÇÕES IMPORTANTES:
+- O sistema roda no navegador com armazenamento local. A solicitação de senha é apenas demonstrativa: não existe validação segura de credenciais/permissões sem backend.
+- Não há integração automática efetiva entre baixas de vendas/Contas a Receber e o novo Caixa nesta versão. Isso exige unificar os diferentes módulos de recebimento para evitar duplicidade.
+- Tesouraria, cartão, PIX, conciliação financeira, fechamento autorizado por administrador e histórico de auditoria seguro precisam de implementação e testes adicionais.
+- Os dados permanecem no armazenamento local do navegador; faça backup antes de substituir versões.
+
+COMO ABRIR: extraia o ZIP e abra index.html no navegador.

@@ -1,0 +1,7 @@
+LUCAS LIMA — atualização do cadastro da loja
+- Nome do sistema atualizado para LUCAS LIMA.
+- Apenas um botão ATALHOS no cabeçalho do Cadastro da Loja.
+- Apenas um campo USUÁRIO, ao lado do E-MAIL.
+- Botões de remoção de imagens menores.
+- Mantidos F1 (atalhos) e F12 (localizar loja), imagem de fundo do login e demais módulos.
+- Protótipo local de testes; autenticação não é segura para produção.

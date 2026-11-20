@@ -1,0 +1,17 @@
+LUCAS LIMA — DRE (VERSÃO DE TESTES)
+Abra ERP_SYSTEMS/index.html e acesse RELATÓRIOS > DRE.
+
+Incluído:
+- DRE gerencial por competência com filtros por data
+- Receita das vendas baixadas e descontos/acréscimos
+- CMV apenas quando houver custo histórico gravado em cada item
+- Despesas apenas com categoriaDRE e dataCompetencia explícitas
+- Detalhamento dos lançamentos, comparação mensal, gráfico, CSV e impressão/PDF
+- Sem fechamento e sem edição direta de valores no DRE
+- Removido atalho redundante RELATÓRIO DE VENDAS
+
+ATENÇÃO: O sistema existente ainda não grava custo histórico em todas as vendas,
+nem classificação de competência para todas as despesas. Por isso, o DRE sinaliza
+valores parciais. Integração contábil completa, comparativos anuais com variações
+percentuais, permissões reais e acesso direto ao documento individual ainda não
+estão implementados. Não usar como DRE contábil oficial.
